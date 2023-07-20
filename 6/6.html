@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="6.css">
+    <title>Page 6</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="./images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- section 1 -->
+    <section class="section-1">
+        <h3>ユーザアカウント</h3>
+    </section>
+
+    <!-- section 2 -->
+    <div class="section-2">
+        <div class="section-2-back">
+            <button class="back">ユーザアカウント一覧へ戻る</button>
+        </div>
+        <div class="tab">tabAccountSettings</div>
+        <div class="section-2-menu">
+            <button>基本情報</button>
+            <button>パスワードの再設定</button>
+        </div>
+        <div class="info">基本設定</div>
+        <span>ユーザアカウントの基本情報を設定してください。</span>
+    </div>
+
+    <!-- main -->
+    <main class="main">
+        <table class="main-table">
+            <tr>
+                <td colspan='2' bgcolor="#94C6F2">ユーザID</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td colspan='2' bgcolor="#94C6F2">権限</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td colspan='2' bgcolor="#94C6F2">アカウントの状態</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td colspan='2' bgcolor="#94C6F2">スマホアカウントの状態</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td colspan='2' bgcolor="#94C6F2">通知メール</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td rowspan='6' bgcolor="#94C6F2">社員情報</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">氏名</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">氏名(カナ)</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">生年月日</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">入社年月日</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">退社年月日</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td bgcolor="#94C6F2">ログイン試行回数</td>
+                <td>データバインド</td>
+            </tr>
+
+        </table>
+    </main>
+
+    <!-- section -->
+    <section>
+        <div>
+            <button>編集</button>
+            <button>ログイン試行回数リセット</button>
+        </div>
+        <div class="hf"> 
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcAccountRegist</span>
+                </a>
+            </button> <br>
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcRoleGroupType</span>
+                </a>
+            </button> <br>
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcExistUserId</span>
+                </a>
+            </button> <br>
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcExistEmployeeId</span>
+                </a>
+            </button> <br>
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - hdnTmpEmployeeId</span>
+                </a>
+            </button> <br>
+            <button>
+                <a href="">
+                    <h4>SqlDataSource</h4>
+                    <span> - hdnInsertedUserId</span>
+                </a>
+            </button> <br>
+        
+        </div>
+
+    </section>
+
+    <!-- table -->
+    <div class="table">
+        <table>
+            <tr class="table-head background-skyblue">
+                <th colspan='2'><a href="">社員ID</a></th>
+                <th><a href="">氏名</a></th>
+                <th><a href="">生年月日</a></th>
+                <th><a href="">入社 <br> 年月日</a></th>
+                <th><a href="">退社 <br> 年月日</a></th>
+                <th><a href="">ユーザID</a></th>
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+            <tr class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr  class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr  class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr  class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr  class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+        </table>
+        <!--  -->
+        <div class="page">
+            <p class="background-skyblue">
+                <a href="">1</a>
+                <a href="">2</a>
+            </p>
+        </div>
+        <!--  -->
+        <div class="cancel">
+            <button>キャンセル</button>
+        </div>
+    </div>
+
+</body>
+</html>

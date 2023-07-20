@@ -1,0 +1,153 @@
+
+/*リセットCSS*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.background-skyblue {
+  background-color: rgb(111, 181, 255);
+}
+
+.wrap {
+  display: flex;
+}
+
+
+
+/* header place */
+.header {
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  background-color: #006633;
+}
+.header-left {
+  display: flex;
+}
+.header-left-span {
+  display: flex;
+  padding-left: 5px;
+}
+.header-left-span span {
+  color: white;
+  padding-right: 12px;
+}
+.header-left-span span {
+  color: white;
+}
+.header-left-span span,
+.header-left-span div {
+  margin-left: 10px;
+}
+.css-arrow-right { 
+  border-color: transparent transparent transparent black; 
+  border-style: solid; 
+  border-width: 6px 0px 6px 12px; 
+  height: 0; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 0;
+}
+.header-right {
+  display: flex;
+}
+
+/* section-1 place */
+.section-1{
+  background-color: #339999;
+  margin: auto;
+}
+.section-1 h3 {
+  font-weight: 100;
+  color: white;
+}
+
+/* section-2 place */
+.section-2-back {
+  text-align: right;
+}
+.tab {
+  background-color: #A0A0A0;
+  text-align: center;
+}
+.section-2-menu {
+  border: 1px solid #CCCCCC;
+  display: flex;
+}
+.section-2-menu button {
+  border: 1px solid #CCCCCC;
+  margin-right: 2px;
+}
+.info {
+  color: white;
+  background-color: #30618C;
+}
+.section-2 span {
+  color: #A0A0A0;
+}
+.section-2 p{
+  margin-top: 16px;
+  color: #555555;
+  background-color: rgb(111, 181, 255);
+}
+
+/* 絞り込み */
+.search{
+  margin-top: 5px;
+} 
+.search p {
+  margin: 0 5px;
+  padding: 5px;
+  text-align: center;
+
+}
+
+/*テーブル全体*/
+table {
+  margin: 5px auto 0;       /* テーブル全体を中央寄せ */
+  width: 1000px;              /* テーブルの幅を指定 */
+  border-collapse: collapse; /* セルの境界線を空けない */
+  border: 1px solid gray;   /* テーブル全体を囲う線 */
+}
+.table-head {
+	border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+  background-color: rgb(194, 248, 255);
+}
+table button a{
+  padding: 2px 20px;
+  text-decoration: none;
+  color: black;
+}
+td,th {
+  border: 1px solid gray;   /*セル内の線*/
+}
+.table{
+  width: 1000px;
+}
+.table .page a{
+  margin-left: 5px;
+}
+
+/*　footer */
+footer p{
+  color: gray;
+}
+footer .account-mes{
+  margin: 16px 0;
+}
+.hf button{
+  padding: 15px;
+}
+.hf button a,.account-button button a{
+  text-decoration: none;
+  color: black;
+}
+.account-button a{
+  padding: 5px 15px;
+}
