@@ -1,0 +1,161 @@
+/* .section {
+    display: flex;
+} */
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+.hf button{
+    padding: 10px 0px 10px 0px;
+}
+
+.hf button a{
+    text-decoration: none;
+    color: black;
+}
+
+.property{
+    text-align: right;
+}
+.property .property-box button{
+    width: 200px;
+}
+.property .property-box button a{
+    text-decoration: none;
+    color: black;
+}
+.base-info-back{
+    background-color: #FFFFCC;
+}
+
+.section-base {
+    display: flex;
+}
+
+.base-info div{
+    display: flex;
+
+}
+
+.info{
+    background-color:#336699;
+    margin: 2px;
+}
+
+.base-info div p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.memo{
+    display: flex;
+}
+
+.memo p {
+    width: 100px;
+    height: 50px;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.memo input {
+    margin: 0;
+    width: 100px;
+    height: 50px;
+    top: 50px;
+}
+
+.base-info div p:nth-child(1),
+.memo p
+{ 
+    width: 100px;
+    background-color: #94C9FF;
+
+}
+.hf button a{
+    text-decoration: none;
+    color: black;
+}
+.tab {
+    margin: 0;
+    background-color: thistle;
+    text-align: center;  
+}
+.plus-info{
+    display: flex;
+}
+.tab-b button a{
+    color: blue;
+}
+.property-info div{
+    display: flex;
+}
+.property-info div p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+.property-info div p:nth-child(1){ 
+    width: 100px;
+    background-color: #94C9FF;
+}
+.fam div{
+    display: flex;
+}
+.fam div p{
+    margin: 0;
+    margin-bottom: 5px;
+}
+.fam div p:nth-child(1){ 
+    width: 100px;
+    background-color: #94C9FF;
+}

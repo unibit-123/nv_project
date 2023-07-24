@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+}
+
+/* header place */
+
+.lblCompanyName {
+    align-items: center;
+    display: flex;
+    background-color: seagreen;
+    height: 65px;
+}
+.lblCompanyName p{
+    font-size: large;
+}
+
+/* section1 place */
+
+.property-select {
+    background-color: #1E787C;
+}
+
+.property-select-1{
+    display: flex;
+}
+.property-select-1 p:nth-child(1){
+    background-color: #94C6F2;
+}
+
+.property-select-2{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* 絞り込み */
+.search{
+    margin-top: 5px;
+  } 
+  .search p {
+    margin: 0 5px;
+    padding: 5px;
+    text-align: center;
+  
+  }
+  
+  /*テーブル全体*/
+  table {
+    width: 1000px;              /* テーブルの幅を指定 */
+    border-collapse: collapse; /* セルの境界線を空けない */
+    border: 1px solid gray;   /* テーブル全体を囲う線 */
+  }
+  .table-head {
+    background-color: #99CCFF;
+      border-bottom: 2px solid #595959; /*線のスタイル*/
+  }
+  .table-skyblue{
+    background-color: rgb(194, 248, 255);
+  }
+  table button a{
+    padding: 2px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  td,th {
+    border: 1px solid gray;   /*セル内の線*/
+  }
+  .table .page a{
+    margin-left: 5px;
+  }
+  

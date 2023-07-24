@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+}
+p{
+}
+.lblCompanyName {
+    align-items: center;
+    display: flex;
+    background-color: seagreen;
+}
+.lblCompanyName p{
+    font-size: large;
+}
+.systemerror{
+    font-weight: 100;
+    color: white;
+    background-color: teal;
+}
+.wrap{
+    /*　横並び  */
+    display: flex;
+}
+
+.main {
+    padding: 30px 0px 30px 0px;
+}
+
+.ErrorBox{
+    /* 文字色 */
+    color: red;
+    /* 枠線 */
+    border: solid gray 4px;
+    /*　位置 */
+     text-align: center;
+   
+    /* 幅指定 */
+    width: 500px;
+    /* 高さ指定 */
+    /* height: ; */
+    padding: 20px 0px 20px 0px;
+}
+.ErrorBox div{
+    /* 余白（外） */
+    margin-bottom: 5px;
+}
+.ErrorBox-button button{
+    margin: 0 auto;
+}
+
+button{
+    /* 余白（内）上　右　下　左 */
+    /* padding: 5px 10px 23px 5px; */
+}
+
+.shousai{
+    display: flex;
+    background-color: lightskyblue;
+    color: gray;
+}
+.error{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.reigai{
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+}

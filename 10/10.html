@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="10.css">
+    <title>10</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="./image/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>
+                        <a href="">ログアウト</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- section 1 -->
+    <section class="section-1">
+        <div class="section-1-color">
+            <h3>物件作業履歴一覧</h3>
+        </div>
+        <div class="section-1-button-right">
+            <div>
+                <button>物件一覧へ戻る</button>
+            </div>
+            <div>
+                <button>物件情報へ戻る</button>
+            </div>
+        </div>
+        <button class="section-btn-field">
+            <h4>HiddenField</h4>
+            <span> - hdnArticleld</span>
+        </button>
+    </section>
+
+    <!-- section 2 -->
+    <section class="section-2">
+        <!--  -->
+        <h3 class="search">
+            検索条件
+        </h3>
+        <!-- table -->
+        <table class="table">
+            <tr>
+                <td class="td" bgcolor="#99CCFF">物件ID</td>
+                <td>[lblArticleId]</td>
+            </tr>
+            <tr>
+                <td class="td" bgcolor="#99CCFF">物件名</td>
+                <td>[lblArticleName]</td>
+            </tr>
+            <tr>
+                <td class="td" bgcolor="#99CCFF">作業品目名</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td class="td" bgcolor="#99CCFF">期間<br>
+                    <span class="td-span">予定、または実績の終了年月日</span>
+                </td>
+                <td colspan="5">
+                    <input type="text" size="8">
+                    <img src="./image/Calendar_scheduleHS.png" alt="">
+                    <span>入力形式が不正です。</span>
+                    <span>～</span>
+                    <input type="text" size="8">
+                    <img src="./image/Calendar_scheduleHS.png" alt="">
+                    <span>入力形式が不正です。</span>
+                </td>
+            </tr>
+        </table>
+        <!--  -->
+        <div class="table-div">
+            <button>検索実行</button>
+            <span>※内装の作業履歴は、検索結果に含まれません。</span>
+        </div>
+    </section>
+
+    <!-- 物件一覧 -->
+    <div class="sagyo-zone">
+        <h3>
+            作業履歴
+        </h3>
+    </div>
+
+    <!-- table 2 section -->
+    <table class="table2">
+        <tr class="table-head background-skyblue">
+            <th><a href="">区分</a></th>
+            <th><a href="">作業品目名</a></th>
+            <th><a href="">作業予定</a></th>
+            <th><a href="">作業実績</a></th>
+            <th><a href="">作業実績備考</a></th>
+            <th><a href="">仕入先</a></th>
+            <th><a href="">自社担当者(作業)</a></th>
+            <th><a href="">自社担当者(営業)</a></th>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+        <tr class="table-skyblue">
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+            <td>データバインド</td>
+        </tr>
+    </table>
+
+    <!-- footer -->
+    <div>
+    <!--  -->
+    <div class="page">
+        <p class="background-skyblue">
+            <a href="">1</a>
+            <a href="">2</a>
+        </p>
+    </div>
+    <!--  -->
+    <div class="cancel">
+        <button>
+            <h4>SqlDataSource</h4>
+            <span> - dsrcSearchArticleWorkHistory</span>
+        </button>
+    </div>
+</div>
+
+
+</body>
+</html>

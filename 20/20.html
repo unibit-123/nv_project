@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="20.css">
+    <title>20</title>
+</head>
+<body>
+                <!-- header -->
+                <div class="navbar">
+                    <div class="header">
+                        <div class="header-left">
+                            <div class="header-left-img">
+                                <img src="./image/CompanyLogo.jpg" alt="">
+                            </div>
+                            <div class="header-left-span">
+                                <span>ルート</span>
+                                <span>ルート</span>
+                                <div class="css-arrow-right"></div>
+                                <span>ルート</span>
+                                <span>ルート</span>
+                                <span>ルート</span>
+                            </div>
+                        </div>
+                        
+                        <div class="header-right">
+                            <div>[lblUserId]</div>
+                            <div>
+                                <a href="">ログアウト</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- section 1-->
+                <section class="section-1">
+                    <div>
+                        <button>
+                            <a href="">
+                                <h4>HiddenField</h4>
+                            </a>
+                            <a href="">
+                                <span> - hdnScrX</span>
+                            </a>
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <h4>HiddenField <br> </h4>
+                            <span> - hdnScrY</span>
+                        </button>
+                    </div>
+                    <h1>受注先別案件一覧(一括解約)</h1>
+                    <div class="right">
+                        <a href="">受注先マスタに戻る</a>
+                    </div>
+                    <h3>検索一覧</h3>
+                </section>
+
+                <!-- section 2 -->
+                <div class="section-2">
+                    <div>
+                        <button>
+                            <a href="">
+                                <h4>HiddenField</h4>
+                            </a>
+                            <a href="">
+                                <span> - hdnRequestPage</span>
+                            </a>
+
+                        </button>
+                    </div>
+                    <div>
+                        <button>
+                            <a href="">
+                                <h4>HiddenField <br> </h4>
+                            </a>
+                            <a href="">
+                                <span> - hdnSelectedCustomerID</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- first table -->
+                <div>
+                    <table>
+                        <tr>
+                            <td class="first-table-bg">変更日</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="first-table-bg">担当者</td>
+                            <td rowspan="2">
+                                <button class="first-table-button">
+                                    <a href="">
+                                        <h4>HiddenField</h4>
+                                    </a>
+                                    <a href="">
+                                        <span> - hdnRequestPage</span>
+                                    </a>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="first-table-button2">
+                                    <a href="">・・・</a>
+                                </button>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>[lblEmployeeName1]</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="first-table-button3">
+                                <button>
+                                    選択した案件の担当者を一括変更
+                                </button>
+                            </td>
+
+                        </tr> 
+                    </table>
+                </div>
+
+                <!-- red span -->
+                <div class="red-span">
+                    <h4>
+                        選択した受注の担当者を変更しました。
+                    </h4>
+                    <h4>
+                        担当者2はクリアされました。
+                    </h4>    
+                    <h4>
+                        変更日は必ず設定してください。
+                    </h4>
+                    <h4>
+                        変更日はYYYY/MM/DD形式で入力してください。
+                    </h4>
+                    <h4>
+                        担当者は必ず選択してください。
+                    </h4>
+                    <h4>
+                        担当者を変更する案件を1件以上選択してください。
+                    </h4>
+                </div>
+
+                <!-- second table -->
+                <div>
+                    <div class="second-table-header">
+                        <a href="">すべて選択</a>
+                        <a href="">すべて解除</a>
+                    </div>
+                    <div class="second-table-table">
+                        <table>
+                            <tr class="table-bg">
+                                <td rowspan="3">対象</td>
+                                <td rowspan="3">物件名</td>
+                                <td rowspan="3">受注先名</td>
+                                <td rowspan="3">案件名(契約区分)</td>
+                                <td rowspan="3">担当者</td>
+                                <td rowspan="3">状況</td>
+                                <td colspan="4">金額(税別)</td>
+                                <td rowspan="3"></td>
+    
+                            </tr>
+                            <tr class="table-bg">
+                                <td>受注額</td>
+                                <td>発注額</td>
+                                <td>粗利額</td>
+                                <td>粗利率</td>
+                            </tr>
+                            <tr class="table-bg">
+                                <td></td>
+                                <td>販管費</td>
+                                <td>純利額</td>
+                                <td>純利率</td>
+    
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>商談中<br>未承認</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>詳細</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>商談中<br>未承認</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>詳細</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>商談中<br>未承認</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>詳細</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>商談中<br>未承認</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>詳細</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="" id="">
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>商談中<br>未承認</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>詳細</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- second table footer -->
+                <div class="section-3-footer">
+                    <span>合計(税別)</span>
+                    <table>
+                        <tr>
+                            <td>￥99,999,999</td>
+                            <td>￥99,999,999</td>
+                            <td>￥99,999,999</td>
+                            <td class="td"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>￥99,999,999</td>
+                            <td>￥99,999,999</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+
+</body>
+</html>

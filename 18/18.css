@@ -147,6 +147,10 @@ table {
     padding: 5px;
   }
 
+  .background-skyblue {
+    background-color: skyblue;
+  }
+
 .table-span {
     color: white;
     background-color: #336699;

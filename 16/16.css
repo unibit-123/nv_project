@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+}
+
+* {
+    margin: 0;
+}
+
+.span {
+    background-color: white;
+}
+
+.span span{
+    border: 1px solid skyblue;
+    width: 100%;
+}
+
+.local {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.local span{
+    color: white;
+}
