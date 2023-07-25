@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/* section 1 */
+.section-1 h1 {
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+}
+
+.section-1 h3 {
+    margin-top: 3px;
+    color: white;
+    background-color: #336699;
+}
+
+/* first table */
+
+
+.first-table-bg {
+    text-align: center;
+    background-color: #99CCFF;
+}
+
+.first-table-button button {
+    padding: 3px 10px 3px 10px;
+}
+
+.first-table button {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* second table */
+
+.table-span-2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bg-color-blue {
+    background-color: #99CCFF;
+    margin-bottom: 10px;
+}
+
+.table-span-2 span {
+    color:rgb(156, 156, 156)
+}
+
+.table-span-3 {
+    margin-top: 10px;
+}
+
+.table-2-button a button{
+    padding: 10px;
+    display: flex;
+}
+
+.table-head {
+    border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+    background-color: #e3eff8
+}
+
+table button{
+    width: 100%;
+}
+
+.table{
+    margin-top: 10px;
+}
+
+
+.table .page a{
+    margin-left: 5px;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.background-skyblue {
+    background-color: skyblue;
+}
+
+.table-span {
+    color: white;
+    background-color: #336699;
+}
+
+/*  */
+.footer-page {
+    background-color: #99CCFF;
+}
+
+.footer-button button{
+    display: flex;
+    padding: 10px;
+}
+
+.footer-button-2 button {
+    padding: 10px;
+}
+

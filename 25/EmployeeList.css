@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*  */
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/*  */
+/* section 1 */
+.section-1 h1 {
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+}
+
+.section-1 h3 {
+    margin-top: 3px;
+    color: white;
+    background-color: #336699;
+}
+
+/*  */
+/* section 2 */
+
+.section-2 {
+    background-color: #FFFFCC;
+}
+
+.color-red {
+    color: red;
+}
+
+.section-2 table tr td {
+    border: 1px dashed lightgray;
+}
+
+/*  */
+/* section 3 */
+
+.section-3 table tr th {
+    background-color: #99CCFF;
+}
+
+.section-3 table tr td button {
+    padding: 0px 15px 0px 15px;
+}
+
+.bg-color-skyblue td {
+    background-color: #E3FAFE;
+}
+
+.section-3 div {
+    background-color: #99CCFF;
+}
+
+/*  */
+/* section 4 */
+
+.section-4 div button{
+    padding: 10px;
+    display: flex;
+}

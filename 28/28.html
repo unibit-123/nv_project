@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="28.css">
+    <title>28</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+                        <div class="header">
+                            <div class="header-left">
+                                <div class="header-left-img">
+                                    <img src="./image/CompanyLogo.jpg" alt="">
+                                </div>
+                                <div class="header-left-span">
+                                    <span>ルート</span>
+                                    <span>ルート</span>
+                                    <div class="css-arrow-right"></div>
+                                    <span>ルート</span>
+                                    <span>ルート</span>
+                                    <span>ルート</span>
+                                </div>
+                            </div>
+                            
+                            <div class="header-right">
+                                <div>[lblUserId]</div>
+                                <div>
+                                    <a href="">ログアウト</a>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+
+    <!-- section 1-->
+    <section class="section-1">
+        <h1>計画外作業実績</h1>
+        <h3>計画外作業実績概要</h3>
+    </section>
+
+    <!-- first table -->
+    <section class="first-table">
+        <table>
+            <tr>
+                <td colspan="2" class="first-table-bg">物件</td>
+                <td>
+                    <a href="">
+                        <button>一覧物件</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">得意先</td>
+                <td>
+                    <a href="">
+                        <button>一覧物件</button>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">作業項目日</td>
+                <td>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">実施日</td>
+                <td>
+                    <input type="text" size="7">
+                    <img src="/28/image/Calendar_scheduleHS.png" alt="">
+                    <span>～</span>
+                    <input type="text" size="7">
+                    <img src="/28/image/Calendar_scheduleHS.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">実施時刻</td>
+                <td>
+                    <input type="text" size="5">
+                    <span>～</span>
+                    <input type="text" size="5">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">実施備考</td>
+                <td>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="first-table-bg">実施者(外注先)</td>
+                <td class="first-table-button">
+                    <button>一覧選択</button>
+                    <button>クリア</button>
+                </td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="first-table-bg">実施者(社内)</td>
+                <td class="first-table-bg">組職</td>
+                <td class="first-table-button">
+                    <button>一覧選択</button>
+                    <button>クリア</button>
+                </td>
+            </tr>
+            <tr>
+                <td class="first-table-bg">社員</td>
+            </tr>
+            <tr>
+                <td rowspan="3" class="first-table-bg">報告書</td>
+                <td class="first-table-bg">報告書提出要否</td>
+                <td>
+                    <input type="checkbox" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td class="first-table-bg">報告書提出年月日</td>
+                <td>
+                    <input type="text" size="7">
+                    <img src="/28/image/Calendar_scheduleHS.png" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="first-table-bg">報告書提出区分</td>
+                <td>
+                    <select name="" id=""></select>
+                </td>
+            </tr>
+        </table>
+        <button>登録</button>
+    </section>
+
+    <!-- second table -->
+    <section class="table">
+        <div class="table-span">
+                    <span>得意先選択</span>
+        </div>
+        <div class="table-span-2">
+            <span>
+                選択ボタンをクリックして、得意先を選んでください。
+            </span>
+        </div>
+        <div class="bg-color-blue">
+            <span>
+                以下の条件で絞込を行います
+            </span>
+        </div>
+        <div>
+            <span class="bg-color-blue table-span-3">名称</span>
+            <input type="text" size="15">
+            <button>
+                <a href="">
+                    絞込み
+                </a>
+            </button>
+        </div>
+        <table>
+                    <tr class="table-head background-skyblue">
+                        <th><a href=""></a></th>
+                        <th><a href="">ID</a></th>
+                        <th><a href="">名称</a></th>
+                        <th><a href="">住所</a></th>
+                        <th><a href="">電話番号(内線)</a></th>
+                        <th><a href="">FAX1(内線)</a></th>
+                        <th><a href="">登録年月日</a></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+        </table>
+        <!--  -->
+        <div class="footer-page">
+            <a href="">1</a>
+            <a href="">2</a>
+        </div>
+        <div class="footer-button">
+            <button>
+                <h4>SqlDataSource</h4>
+                <span> - dsrcSearch_CustomerList</span>
+            </button>
+        </div>
+        <div class="footer-button-2">
+            <button>
+                <a href="">キャンセル</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- second table 1 -->
+    <section class="table">
+        <div class="table-span">
+                    <span>物件選択</span>
+        </div>
+        <div class="table-span-2">
+            <span>
+                選択ボタンをクリックして、仕入先を選んでください。
+            </span>
+        </div>
+        <!-- <div class="table-2-button">
+            <a href="">
+                <button>
+                    <h4>HiddenField</h4>
+                    <span> - hdnPanelContract_Type</span>
+                </button>
+            </a>
+        </div> -->
+        <div class="bg-color-blue">
+            <span>
+                以下の条件で絞込を行います
+            </span>
+        </div>
+        <div>
+            <span class="bg-color-blue table-span-3">名称</span>
+            <input type="text" size="15">
+            <button>
+                <a href="">
+                    絞込み
+                </a>
+            </button>
+        </div>
+        <table>
+                    <tr class="table-head background-skyblue">
+                        <th><a href=""></a></th>
+                        <th><a href="">ID</a></th>
+                        <th><a href="">名称</a></th>
+                        <th><a href="">住所</a></th>
+                        <th><a href="">電話番号(内線)</a></th>
+                        <th><a href="">FAX1(内線)</a></th>
+                        <th><a href="">登録年月日</a></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+        </table>
+        <!--  -->
+        <div class="footer-page">
+            <a href="">1</a>
+            <a href="">2</a>
+        </div>
+        <div class="footer-button">
+            <button>
+                <h4>SqlDataSource</h4>
+                <span> - dsrcSearch_BuildList</span>
+            </button>
+        </div>
+        <div class="footer-button-2">
+            <button>
+                <a href="">キャンセル</a>
+            </button>
+        </div>
+    </section>
+
+    <!-- second table 2 -->
+    <section class="table">
+            <div class="table-span">
+                        <span>物件選択</span>
+            </div>
+            <div class="table-span-2">
+                <span>
+                    選択ボタンをクリックして、仕入先を選んでください。
+                </span>
+            </div>
+            <!-- <div class="table-2-button">
+                <a href="">
+                    <button>
+                        <h4>HiddenField</h4>
+                        <span> - hdnPanelContract_Type</span>
+                    </button>
+                </a>
+            </div> -->
+            <div class="bg-color-blue">
+                <span>
+                    以下の条件で絞込を行います
+                </span>
+            </div>
+            <div>
+                <span class="bg-color-blue table-span-3">名称</span>
+                <input type="text" size="15">
+                <button>
+                    <a href="">
+                        絞込み
+                    </a>
+                </button>
+            </div>
+            <table>
+                        <tr class="table-head background-skyblue">
+                            <th><a href=""></a></th>
+                            <th><a href="">ID</a></th>
+                            <th><a href="">名称</a></th>
+                            <th><a href="">住所</a></th>
+                            <th><a href="">電話番号(内線)</a></th>
+                            <th><a href="">FAX1(内線)</a></th>
+                            <th><a href="">登録年月日</a></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+    
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+    
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+            </table>
+            <!--  -->
+            <div class="footer-page">
+                <a href="">1</a>
+                <a href="">2</a>
+            </div>
+            <div class="footer-button">
+                <button>
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcSearch_BuildList</span>
+                </button>
+            </div>
+            <div class="footer-button-2">
+                <button>
+                    <a href="">キャンセル</a>
+                </button>
+            </div>
+    </section>
+
+    <!-- second table 3 -->
+    <section class="table">
+                <div class="table-span">
+                            <span>仕入先選択</span>
+                </div>
+                <div class="table-span-2">
+                    <span>
+                        選択ボタンをクリックして、仕入先を選んでください。
+                    </span>
+                </div>
+                <div class="table-2-button">
+                    <a href="">
+                        <button>
+                            <h4>HiddenField</h4>
+                            <span> - hdnPanelContract_Type</span>
+                        </button>
+                    </a>
+                </div>
+                <div class="bg-color-blue">
+                    <span>
+                        以下の条件で絞込を行います
+                    </span>
+                </div>
+                <div>
+                    <span class="bg-color-blue table-span-3">名称</span>
+                    <input type="text" size="15">
+                    <button>
+                        <a href="">
+                            絞込み
+                        </a>
+                    </button>
+                </div>
+                <table>
+                            <tr class="table-head background-skyblue">
+                                <th><a href=""></a></th>
+                                <th><a href="">ID</a></th>
+                                <th><a href="">名称</a></th>
+                                <th><a href="">住所</a></th>
+                                <th><a href="">電話番号(内線)</a></th>
+                                <th><a href="">FAX1(内線)</a></th>
+                                <th><a href="">登録年月日</a></th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr class="table-skyblue">
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr>
+                                <td >
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr  class="table-skyblue">
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+        
+                            </tr>
+                            <tr  class="table-skyblue">
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+        
+                            </tr>
+                            <tr  class="table-skyblue">
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                            <tr  class="table-skyblue">
+                                <td>
+                                    <button><a href="">選択</a></button>
+                                </td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                                <td>データバインド</td>
+                            </tr>
+                </table>
+                <!--  -->
+                <div class="footer-page">
+                    <a href="">1</a>
+                    <a href="">2</a>
+                </div>
+                <div class="footer-button">
+                    <button>
+                        <h4>SqlDataSource</h4>
+                        <span> - dsrcSearch_SupplierList</span>
+                    </button>
+                </div>
+                <div class="footer-button-2">
+                    <button>
+                        <a href="">キャンセル</a>
+                    </button>
+                </div>
+    </section>
+
+    <!-- second table 4 -->
+    <section class="table">
+            <div class="table-span">
+                <span>自社組</span>
+            </div>
+            <div class="table-span-2">
+                <span>
+                    選択ボタンをクリックして、仕入先を選んでください。
+                </span>
+            </div>
+            <div class="table-2-button">
+                <a href="">
+                    <button>
+                        <h4>HiddenField</h4>
+                        <span> - dsrcFilter_CompanyOrganization</span>
+                    </button>
+                </a>
+            </div>
+            <div class="table-2-button">
+                <a href="">
+                    <button>
+                        <h4>HiddenField</h4>
+                        <span> - dsrcFilter_CompanyEmployeeNameKj</span>
+                    </button>
+                </a>
+            </div>
+            <div class="bg-color-blue">
+                <span>
+                    以下の条件で絞込を行います
+                </span>
+            </div>
+            <div>
+                <span class="bg-color-blue table-span-3">名称</span>
+                <select name="" id="">
+                    <option value="">データバインド</option>
+                </select>
+                <span class="bg-color-blue table-span-3">氏名</span>
+                <select name="" id="">
+                    <option value="">データバインド</option>
+                </select>
+            </div>
+            <table>
+                        <tr class="table-head background-skyblue">
+                            <th rowspan="12">所属</th>
+                            <th><a href=""></a></th>
+                            <th><a href="">組織ID</a></th>
+                            <th><a href="">組織名称</a></th>
+                            <th><a href="">社員ID</a></th>
+                            <th><a href="">氏名</a></th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+
+                        </tr>
+                        <tr class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td >
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+    
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+    
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr  class="table-skyblue">
+                            <td>
+                                <button><a href="">選択</a></button>
+                            </td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                            <td>データバインド</td>
+                        </tr>
+                        <tr class="bg-color-blue">
+                            <td colspan="7">
+                                <a href="">1</a>
+                                <a href="">2</a>
+                            </td>
+                        </tr>
+            </table>
+            <!--  -->
+            <!-- <div class="footer-page">
+                <a href="">1</a>
+                <a href="">2</a>
+            </div> -->
+            <div class="footer-button">
+                <button>
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcSearch_SupplierList</span>
+                </button>
+            </div>
+            <div class="footer-button">
+                <button>
+                    <h4>HiddenField</h4>
+                    <span> - hdnNumber</span>
+                </button>
+            </div>
+            <div class="footer-button-2">
+                <button>
+                    <a href="">キャンセル</a>
+                </button>
+            </div>
+    </section>
+
+    
+</body>
+</html>

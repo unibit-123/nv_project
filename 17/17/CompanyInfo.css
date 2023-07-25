@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/* Section1-place */
+
+.Company{
+    background-color: #1E787C;
+    color: white;
+    font-size: 20px;
+}
+
+.Company-1 div p{
+    background-color: #2A6197;
+    color: white;
+}
+
+.Company-1  div button{
+    width: 100%;
+}
+
+.Company-2{
+    background-color: #2A6197;
+    color: white;
+}
+
+
+  
+  /*テーブル全体*/
+  .table {
+    /* テーブルの幅を指定 */
+    width: 1000px;
+    border-collapse: collapse; /* セルの境界線を空けない */
+    border: 1px solid gray;   /* テーブル全体を囲う線 */
+  }
+
+  .table tr,
+  .table td {
+    width: 1%;
+  }
+
+  .background-skyblue{
+    background-color: #E8FFFF;
+  }
+
+  .table-head {
+      border-bottom: 2px solid #595959; /*線のスタイル*/
+  }
+  .table-skyblue{
+    background-color: rgb(194, 248, 255);
+  }
+  table button a{
+    padding: 2px 20px;
+    text-decoration: none;
+    color: black;
+  }
+  td,th {
+    border: 1px solid gray;   /*セル内の線*/
+  }
+  .table .page a{
+    margin-left: 5px;
+  }
+
+table tr td {
+    height: 50px;
+}
+/* section2-place */
+
+.Company-button button{
+    height: 40px;
+}
+.Company-3 {
+    background-color:#F0F0F0;
+    text-align: center;
+}
+.Company-button-2{
+    text-align: right;
+}
+/* section3-place */
+
+.space{
+    margin: 20px;
+    color: gray;
+}
+
+
+.Info-change-2 div {
+    display: flex;
+}
+
+.Info-change-2 tr :nth-child(1){
+    background-color: #94C6F2;
+}
+
+.Info-change-2 table td {
+    border: none;
+}
+
+.Info-change-2 table tr {
+    border: none;
+    border-collapse: collapse;
+    border: 0px solid white;
+}
+.Info-change-2 table td{
+    height: 10px;
+}
+
+/* section3 */
+.Company-4 {
+    display: flex;
+}
+.Company-5 button a{
+    color: blue;
+}
+.tell tr :nth-child(1){
+    background-color: #94C6F2;
+}
+
+.tell-td {
+    background-color: #94C6F2;
+}
+.tell table td {
+    border: none;
+    height: 20px;
+}
+
+.tell table tr {
+    border: none;
+    border-collapse: collapse;
+    border: 0px solid white;
+}

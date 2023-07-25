@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button button {
+    padding: 10px;
+}
+
+.lblCompanyName {
+    align-items: center;
+    display: flex;
+    background-color: seagreen;
+}
+.lblCompanyName p{
+    font-size: large;
+}
+
+.property {
+    font-weight: 100;
+    color: white;
+    background-color: teal;
+}
+.sousa{
+    display:  flex;
+}
+.sousa button a{
+    color: black;
+    padding: 10px;
+}
+.touroku{
+    color: red;
+}
+
+.baseinfo button {
+    padding: 10px;
+}
+.title{
+    color: white;
+    background-color:#336699;
+}
+.setsubi button{
+    padding: 10px;
+}
+
+.souas{
+    display: flex;
+}
+.sousa button{
+    padding: 5px;
+}
+.images tr{
+    border-collapse: collapse;
+    border:solid 1px black
+}
+.sendeingimages{
+    padding: 40px;
+}
+.setsubi p{
+    background-color: #94C9FF;
