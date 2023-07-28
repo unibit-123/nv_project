@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Rent_EditOrderInfo.css">
+    <title>page 60 (Rent_EditOrderInfo)</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="img src="../../images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="header-button">
+        <div>
+            <button class="btn-padding">HiddenField-hdnScrX</button>
+        </div>
+        <div>
+            <button class="btn-padding">HiddenField-hdnSrcY</button>
+        </div>
+    </div>
+    <!-- section1 -->
+    <div class="hattyuusaki">
+        <p>明細金額変更</p>
+    </div>
+    <div>
+        <a href="">
+            <button class="btn-padding">HiddenField - hdnContractType</button>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <button class="btn-padding">HiddenField - hdnOrderID</button>
+        </a>
+    </div>
+    <div>
+        <a href="">
+            <button class="btn-padding">HiddenField - hdnRentOrderFlag</button>
+        </a>
+    </div>
+    <div class="red-text">
+        <h5>発注先を変更した後、変更日を入力し実行をクリックしてください。</h5>
+    </div>
+    <div class="hattyuusaki-1">
+        <div>
+            <p>変更日</p>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <button>実行</button>
+        </div>
+        <div>
+            <button>中止</button>
+        </div>
+    </div>
+    <div class="red-text">
+        <h5>変更日は必ず設定してください。</h5>
+        <h5>変更美はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>変更日に存在しない日付が入力されています。</h5>
+        <h5>項目名が未入力です。</h5>
+        <h5>賃料が未入力です。</h5>
+        <h5>賃料は整数で入力してください。</h5>
+        <h5>面積数量が未入力です。</h5>
+        <h5>面積数量はゼロを入力できません。</h5>
+        <h5>面積数量には数字を入力してください。</h5>
+        <h5>面積数量の小数点は２桁までです。</h5>
+        <h5>面積単位が未入力です。</h5>
+        <h5>月額（金額）が未入力です。</h5>
+        <h5>月額（金額）は整数を入力してください。</h5>
+        <h5>契約開始日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>契約開始日に存在しない日付が入力されています。</h5>
+        <h5>共益費は整数を入力してください。</h5>
+        <h5>敷金は整数を入力してください。</h5>
+        <h5>礼金は整数を入力してください。</h5>
+        <h5>初回支払日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>初回支払日に存在しない日付が入力されています。</h5>
+
+    </div>
+    <!-- section2 -->
+    <div class="uper">
+        <p>案件概要(受注ID:M999999)</p>
+    </div>
+    <div class="section-2-table">
+        <table>
+            <tr>
+                <th rowspan=>物件</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnArticleID</button>
+                    <button>HiddenField-hdnArticleID_Old</button>
+                    <p><a href="">[lbtnArticleName]</a></p>
+                    <p>[lblOldArticleName]</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>受注先</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnCostomerID</button>
+                    <button>HiddenField-hdnArticleID_Old</button>
+                    <p><a href="">[lbtnCustomerName]</a></p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th rowspan="2">契約状況</th>
+                <td rowspan="2" colspan="2" class="uper-button">
+                    <p>商談中</p>
+                    <button>HiddenField-hdnArticleID</button><br>
+                    <button>HiddenField-hdnContractState</button>
+                    <p>未承認</p>
+                    <button>HiddenField-hdnApprovalUserID</button><br>
+                    <p>[lblLatestUser]</p>
+                </td>
+            </tr>
+            <tr>
+                <th>案件名</th>
+                <td colspan="5" class="uper-button">
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>SqlDataSource - SqlDataSource-dsrcMstOrderName</button>
+                    <br>
+                    <input type="text" value="案件名">
+                    <span style="font-weight: 600;">
+                        [lblContractType]
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th>担当１</th>
+                <td class="uper-button" colspan="">
+                    <button>HiddenField-hdnEmployeeID1</button>
+                    <br>
+                    <button>HiddenField-hdnEmployeeID1_Old</button>
+                    <p>担当者名１</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>担当２</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnEmployeeID2</button>
+                    <br>
+                    <button>HiddenField-hdnEmployeeID2_Old</button>
+                    <p>担当者名２</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>担当3</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnEmployeeID3</button>
+                    <br>
+                    <button>HiddenField-hdnEmployeeID3_Old</button>
+                    <p>担当者名3</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+            </tr>
+
+            <tr>
+                <th>請求の割合</th>
+                <td colspan="2">
+                    <span>賃料に対して</span>
+                    <input type="text" size="3">
+                    <span>%</span>
+                    <input type="text" size="3">
+                </td>
+
+                <th>下限手数料</th>
+                <td colspan="2">
+                    <span>賃料に対して</span>
+                    <input type="text" size="3">
+                    <span>%</span>
+                    <input type="text" size="3">
+                </td>
+
+                <th>請求明細行の税区分</th>
+                <td colspan="2">
+                    <select name="" id="">
+                        <option value="">税別</option>
+                    </select>
+                    <br>
+                    <button>HiddenField - hdnOldOrderTaxCategory</button>
+                </td>
+            </tr>
+
+            <tr>
+                <th>契約書有無</th>
+                <td colspan="2">
+                    <select name="" id="">
+                        <option value="">なし</option>
+                    </select>
+                </td>
+                <th>契約書を取交した日</th>
+                <td colspan="5">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+    <!-- section3 -->
+    <div class="uper">
+        <p>承認先指定</p>
+    </div>
+    <div class="section-3-table">
+        <table>
+            <tr>
+                <th>取締役承認</th>
+                <th>品質管理部承認</th>
+                <th>次長承認</th>
+                <th>部門長承認</th>
+            </tr>
+            <tr>
+                <td>
+                    <select name="" id="">
+                        <option value="">バインドなし</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">バインドなし</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">バインドなし</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="" id="">
+                        <option value="">バインドなし</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

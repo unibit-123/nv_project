@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+.nyuukin{
+    color: white;
+    background-color:#1E787C;
+    font-size: 20px;
+}
+.header-button div button{
+    height: 45px;
+}
+/* section1-place */
+.hattyuusaki{
+    color: white;
+    background-color: #1E787C;
+    font-size: 20px;
+}
+.red-text{
+    color: red;
+}
+.hattyuusaki-1{
+    display: flex;
+}
+.hattyuusaki-1 div p{
+    background-color: #94C6F2;
+}
+/* section2-place */
+.uper{
+    color: white;
+    background-color: #336699;
+}
+.uper-button button{
+    height: 45px;
+}
+
+ 
+ .section-2-table table tr td,
+ .section-2-table table tr th {
+     border: 1px solid black; 
+ }
+
+ .section-2-table table tr th{
+    background-color: #94C6F2;
+}
+/* section3-place */
+.section-3-table table tr td,
+.section-3-table table tr th{
+    border: 1px solid black; 
+}
+.section-3-table table tr th{
+    height: 20px;
+    width: 80px;
+}
+.section-3-table-background-b{
+    background-color: #94C6F2;
+}
+.section-3-table-background-r{
+    background-color: #FFB6C1;
+}
+.section-3-table-background-g{
+    background-color: #BCF2BB;
+}
+.section-3-table-width {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.flex {
+    display: flex;
+}
+.flex div input{
+    width: 120px;
+}
+.text-box input{
+    width: 40px;
+}
+.select-wid select{
+    width: 160px;
+}

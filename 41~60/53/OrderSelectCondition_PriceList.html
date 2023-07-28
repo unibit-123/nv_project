@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/OrderSelectCondition_PriceList.css">
+    <title>Page53</title></head>
+<body>
+    <header>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>
+                        <a href="">ログアウト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>売上額増減一覧検索</h1>
+        <!-- 検索条件入力 -->
+        <div class="search-box">
+            <h2>検索条件入力（売上額増減一覧）</h2>
+            <div class="color-red">
+                <p>検索する年月を指定してください。</p>
+                <p>検索年月はYYYY/MM形式で入力してください。</p>
+                <p>検索年月存在しない年月が入力されています。</p>
+                <p>契約区分はどちらかを必ず選択してください。</p>
+                <p>検索結果が0件です。</p>
+            </div>
+        </div>
+        <!-- テーブル部分 -->
+        <div class="table">
+            <p class="clear-btn"><a href="">検索条件クリア</a></p>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td>検索年月</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                <tr>
+                    <td>営業担当者</td>
+                    <td>
+                        <div class="wrap">
+                            <p class="background-th">ID</p>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <p class="background-th vertical-box">氏名</p>
+                            <div>
+                                <div class="wrap">
+                                    <input type="text">
+                                    <p>（部分一致）</p>
+                                </div>
+                                <select name="" id="">
+                                    <option value="">データバインド</option>
+                                </select>
+                                <p>（完全一致）</p>
+                                <button class=""><a href="">SqlDataSource - dsrcEmployee</a></button>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><p>その他</p></td>
+                    <td>
+                        <input type="radio">すべて表示<br>
+                        <input type="radio">差額のある案件のみ<br>
+                        <input type="radio">差額のある明細のみ<br>
+                        <input type="radio">増額の明細のみ<br>
+                        <input type="radio">減額の明細のみ
+                    </td>
+                </tr>
+                </tr>
+            </table>
+            <button class="btn-template"><a href="">検索</a></button>
+            <button class="btn-template"><a href="">CSVダウンロード</a></button>
+
+        </div>
+    </main>
+</body>
+</html>

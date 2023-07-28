@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/UrikakeKekomiRirekiPage.css">
+    <title>UrikakeKekomiRirekiPage</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>
+                        <a href="">ログアウト</a>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <!-- section 1-->
+    <section class="section-1">
+    <h1>売掛消込履歴</h1>
+    <h3>売掛(請求)概要</h3>
+    </section>
+
+    <!-- section 2 -->
+    <section class="section-2">
+        <table>
+            <tr>
+                <th>請求書No</th>
+                <td>[lblSeikyushoNo]</td>
+                <th>請求種別</th>
+                <td>[lblSeikyuuSyubetu]</td>
+                <th>業種区分</th>
+                <td>[lblGyoushuKubun]</td>
+                <th>得意先</th>
+                <td>[LBLtOKUISAKIid]</td>
+                <td>[lblTokuisakiNm]</td>
+            </tr>
+            <tr>
+                <th>請求日</th>
+                <td>[lblSeikyuubi</td>
+                <th>入金予定日</th>
+                <td>[lblNyuukinYoteibi]</td>
+            </tr>
+            <tr>
+                <th>売掛額</th>
+                <td>[lblUrikakegaku]</td>
+                <th>消込済額</th>
+                <td>[lblKekomiSumigaku]</td>
+                <th>過不足額</th>
+                <td>[lblKafusokuGaku]</td>
+                <th>消込状況</th>
+                <td>[LBLKekomiJyoukyou]</td>
+            </tr>
+        </table>
+
+        <div>
+            <span class="color-red">
+                [lblErrorMsg]
+            </span>
+        </div>
+    </section>
+
+    <!-- section 3 -->
+    <section class="section-3">
+        <h4>
+            消込履歴一覧
+        </h4>
+        <table>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td colspan="10">
+                    <button>
+                        入金予定一覧表印刷
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th>取引日(入金日)</th>
+                <th>入金実際額</th>
+                <th>振込手数料</th>
+                <th>入金額計</th>
+                <th>消込総額</th>
+                <th>内、当請求分</th>
+                <th>消込実行日</th>
+            </tr>
+            <tr>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+            <tr class="bg-color-skyblue">
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                </td>
+            </tr>
+            <tr>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+            <tr class="bg-color-skyblue">
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+        </table>
+    </section>
+    
+</body>
+</html>

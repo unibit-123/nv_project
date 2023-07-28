@@ -1,0 +1,155 @@
+/*
+h1
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+    font-size: 24px;
+h2
+    background-color: #2A6197;
+    color: white;
+背景色黄色
+    background-color: #FCFCD1;
+背景色すごく薄い青(テーブルtd)
+    background-color: rgb(225, 251, 255);
+背景色薄い青（テーブル）
+    background-color: rgb(111, 181, 255);
+背景色少し薄い青（テーブルth）
+    background-color: #99CCFF;
+
+
+*/
+/*リセットCSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  /* テンプレート */
+.wrap {
+  display: flex;
+} 
+h1 {
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+    font-size: 24px;
+}
+h2{
+    background-color: #2A6197;
+    color: white;
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+.hf button ,.btn{
+    padding: 15px;
+}
+.hf button a,.account-button button a{
+  text-decoration: none;
+  color: black;
+}
+.color-red{
+    color: red;
+}
+.background-skyblue{
+    background-color: #94C6F2;
+}
+.btn-template {
+
+    padding: 0 15px;
+}
+.margin-right p,.margin-right select,.margin-right button{
+    margin: 5px 2.5px;
+}
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+.header-left {
+  display: flex;
+}
+.header-left-span {
+  display: flex;
+  padding-left: 5px;
+}
+.header-left-span span {
+  color: white;
+  padding-right: 12px;
+}
+.header-left-span span {
+  color: white;
+}
+.header-left-span span,
+.header-left-span div {
+  margin-left: 10px;
+}
+.css-arrow-right { 
+  border-color: transparent transparent transparent black; 
+  border-style: solid; 
+  border-width: 6px 0px 6px 12px; 
+  height: 0; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 0;
+}
+.header-right {
+  display: flex;
+}
+.color-gray{
+    color: gray;
+}
+
+/* テーブル全体 */
+.table{
+    margin-top: 28px;
+}
+.table .clear-btn{
+    text-align: right;
+}
+.table .clear-btn a{
+    color: blue;
+    text-decoration: underline;
+}
+table{
+    border-color: gray;
+    width: 100vw;
+}
+.table td{
+    padding: 2.5px 0;
+}
+.table tr td:nth-child(1){
+    /* background-color: #94C6F2; */
+    text-align: center;
+}
+.vertical-box{
+    padding-top: 15px;
+    width: 15px;
+}
+/* 売上額増減一覧 */
+.table-1 td:nth-child(1){
+    background-color: #94C6F2;
+}
+.table-2 th,.table-3 th{
+    background-color: #94C6F2;
+}
+.table-2 td{
+    background-color: white;
+}
+.table-3{
+    margin-top: 14px;
+}
+.table-3 td{
+    padding: 10px 0;
+}
+.price-box{
+    justify-content: flex-end;
+}
+.price-box p{
+    margin: 0 5px;
+}

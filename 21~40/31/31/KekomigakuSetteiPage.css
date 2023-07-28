@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+.nyuukin{
+    color: white;
+    background-color:#1E787C;
+    font-size: 20px;
+}
+/* section1-place */
+
+.space{
+    /* margin: 20px;
+    color: gray; */
+    background-color: #FFFFCC;
+}
+
+
+.Info-change-2 div {
+    display: flex;
+}
+
+.Info-change-2 tr :nth-child(1){
+    background-color: #94C6F2;
+}
+
+.Info-change-2 table td {
+    border: none;
+}
+
+.Info-change-2 table tr {
+    border: none;
+    border-collapse: collapse;
+    border: 0px solid white;
+}
+.Info-change-2 table td{
+    height: 10px;
+}
+.Company-2{
+    background-color: #2A6197;
+    color: white;
+}
+.Info-change-2{
+    background-color: #FFFFCC;
+}
+/* section2-place */
+
+.Kesikomi-table{
+    background-color: #FFFFCC;
+}
+
+.Kesikomi-table table tr th{
+    background-color: #94C6F2;
+}
+
+/* section3-place */
+
+.kesikomikingaku{
+    display: flex;
+    background-color: #FFFFCC;
+}
+.kesikomikingaku-2{
+    background-color: #94C6F2;
+}
+.kesikomikingaku-3{
+    background-color: #FFFFCC;
+    color: red;
+}

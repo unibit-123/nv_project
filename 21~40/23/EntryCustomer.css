@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.button button {
+    padding: 10px;
+}
+
+.lblCompanyName {
+    align-items: center;
+    display: flex;
+    background-color: seagreen;
+}
+.lblCompanyName p{
+    font-size: large;
+}
+
+.property {
+    font-weight: 100;
+    color: white;
+    background-color: teal;
+}
+.sousa{
+    display:  flex;
+}
+.sousa button a{
+    color: black;
+    padding: 10px;
+}
+.touroku{
+    color: red;
+}
+.title{
+    color: white;
+    background-color:#336699;
+}
+
+.baseinfo tr td {
+    color: black;
+}
+
+.table-black table tr td {
+    color: black;
+}
+
+.bg-blue {
+    background-color: #94C9FF;
+    padding: 6px;
+}
+.wrap {
+    display: flex;
+  } 
+  .table-template2 {
+    margin: 5px auto 0;       /* テーブル全体を中央寄せ */
+    width: 1000px;              /* テーブルの幅を指定 */
+    border-collapse: collapse; /* セルの境界線を空けない */
+    border: 1px solid gray;   /* テーブル全体を囲う線 */
+}
+.table-head {
+    border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+  background-color: rgb(194, 248, 255);
+}
+.table-template2 th{
+    background-color: #94C6F2;
+}
+
+table button a{
+    padding: 2px 20px;
+    text-decoration: none;
+    color: black;
+}
+td,th {
+    border: 1px solid gray;   /*セル内の線*/
+}
+.table-template2 .page a{
+    margin-left: 5px;
+}
+  .space{
+    margin: 20px;
+    color: gray;
+}

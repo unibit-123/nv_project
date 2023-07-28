@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../ArticleWorkHistory.css">
+    <title>ArticleWorkHistory</title>
+</head>
+<body>
+    <header>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>
+                        <a href="">ログアウト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- 作業実績一覧 -->
+        <div>
+            <h1>作業実績一覧</h1>
+            <div class="wrap margin-right">
+                <p>一覧表</p>
+                <select name="drop-down-menu">
+                    <option value="">作業実績一覧表</option>
+                    <option value="">作業実績一覧表</option>
+                    <option value="">作業実績一覧表</option>
+                </select>
+                <button><a href="">印刷</a></button>
+                <p class="color-red">印刷対象データが一件もありません。</p>
+            </div>
+            <div class="wrap">
+
+            </div>
+        </div>
+        <!-- 検索条件 -->
+        <div class="search-box">
+            <h2>検索条件</h2>
+            <div class="search-table">
+                <div class="wrap search-tr">
+                    <p class="search-th">作業年月</p>
+                    <div class="search-top">
+                        <input type="text">
+                        <img src="../images/Calendar_scheduleHS.png" alt="">
+                        <p class="color-red">必須入力です。入力形式が不正です。</p>
+                        <p>～</p>
+                        <input type="text">
+                        <img src="../images/Calendar_scheduleHS.png" alt="">
+                        <p class="color-red">必須入力です。入力形式が不正です。</p>
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">物件</p>
+                    <div class="inner-box">
+                        <p>物件ID</p>
+                        <input type="text">
+                        <p>物件名</p>
+                        <input type="text">                         
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">実施業者</p>
+                    <div class="inner-box">
+                        <p>仕入先ID</p>
+                        <input type="text">
+                        <p>仕入名</p>
+                        <input type="text">                         
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">実施社員</p>
+                    <div class="inner-box">
+                        <p>社員ID</p>
+                        <input type="text">
+                        <p>氏名</p>
+                        <input type="text">                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">営業社員</p>
+                    <div class="inner-box">
+                        <p>社員ID</p>
+                        <input type="text">
+                        <p>氏名</p>
+                        <input type="text">                   
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">契約区分</p>
+                    <div class="inner-box">
+                        <select name="drop-down-menu">
+                            <option value="">（指定なし）</option>
+                            <option value="">（指定なし）</option>
+                            <option value="">（指定なし）</option>
+                        </select>                
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">作業品目名</p>
+                    <div class="inner-box">
+                        <input type="text">                 
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">実施状態</p>
+                    <div class="inner-box">
+                        <p>キャンセル・繰延</p>
+                        <select name="drop-down-menu">
+                            <option value="">データバインド</option>
+                            <option value="">データバインド</option>
+                            <option value="">データバインド</option>
+                        </select>
+                        <p>未実施</p>
+                        <select name="drop-down-menu">
+                            <option value="">データバインド</option>
+                            <option value="">データバインド</option>
+                            <option value="">データバインド</option>
+                        </select>              
+                    </div>
+                </div>
+                <div class="wrap search-tr">
+                    <p class="search-th">その他</p>
+                    <div class="search-bottom">
+                        <input type="checkbox">
+                        <p>実績未登録のみ</p>
+                        <input type="checkbox">
+                        <p>緊急対応・電球交換のみ</p>         
+                    </div>
+                </div>
+                <button class="btn-template"><a href="">検索実行</a></button>
+            </div>
+        </div>
+        <!-- 日程一覧 -->
+        <div class="">
+            <h2>日程一覧</h2>
+            <div class="table">
+                <table border="1" cellspacing="0">
+                    <tr class="table-head background-skyblue">
+                        <th></th>
+                        <th><a href="">作業年月</th>
+                        <th><a href="">物件</a></th>
+                        <th><a href="">作業</a></th>
+                        <th><a href="">担当</a></th>
+                        <th><a href="">予定日<span>実績日</span><span>提出日</span></a></th>
+                        <th><a href="">予定時刻<span>実績時刻</span><span>提出要否</span></a></th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                    <!-- 二行目 -->
+                    <tr class="background-td">
+                        <td rowspan="4" class="vertical-box">
+                            <input type="checkbox">
+                            <button><a href="">選択</a></button>
+                            <button><a href="">削除</a></button>
+                            <button><a href="">削除</a></button>
+                        </td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td rowspan="3">データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="background-td">
+                        <td>データバインド</td>
+                        <td class="vertical-box">データバインド
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="background-td">
+                        <td colspan="2">データバインド</td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td>
+                            <select name="" id="">
+                                <option value="">データバインド</option>
+                            </select>
+                        </td>
+                        <td colspan="2">受データバインド 発データバインド 利データバインド</td>
+                    </tr>
+                </table>
+            </div>
+                <div class="wrap">
+                    <a href="" class="a-none">全選択</a>
+                    <a href="" class="a-none">全選択解除</a>
+                    <button class="btn-template"><a href="">実績一括登録</a></button>
+                    <p class="color-red">一括登録する作業予定を選択してください。</p>
+                </div>
+                <p class="color-gray">検索条件に一致する作業が見つかりませんでした。</p>
+        </div>
+        <!-- 変なボタン -->
+        <div>
+            <button class="btn-template"><a href="">計画外の実績を追加</a></button>
+            <div class="hf"> 
+                <button><a href="">SqlDataSource - dsrcScheduleList</a></button><br>
+                <button><a href="">SqlDataSource - dsrcForDdl_CancelDelay</a></button><br>
+                <button><a href="">SqlDataSource - dsrcForDdl_UnConduct</a></button><br>
+                <button><a href="">SqlDataSource - dsrcForDdl_CancelDelayForList</a></button><br>
+                <button><a href="">SqlDataSource - dsrcForDdl_UnConductForList</a></button><br>
+                <button><a href="">SqlDataSource - ddsrcForDdl_NotReported</a></button>
+            </div>
+        </div>
+
+
+    </main>
+
+
+
+
+
+
+
+</body>
+</html>

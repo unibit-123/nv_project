@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="KekomigakuSetteiPage.css">
+    <title>Document</title>
+</head>
+<body>
+     <!-- header -->
+     <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="./images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+    <div class="nyuukin">
+        <p>入金設定および売掛消込設定</p>
+    </div>
+
+    <!-- section1 -->
+<div class="Info-change">
+    <div class="Company-2">
+        <p>入金概要</p>
+    </div>
+    <div class="space">
+        <p>○入金情報</p>
+    </div>
+    <div class="Info-change-2">
+       <table>
+        <tr>
+            <td>取引日（入金日）</td><td>[lblToriHikiBi]</td>
+        </tr>
+        <tr>
+            <td>入金実際額</td><td>[lblNyukinJissaiGaku</th>
+        </tr>
+        <tr>
+            <td>振込手数料額</td><td>[lblTesuuRyouGaku]</td>
+        </tr>
+        <tr>
+            <td>入金設計</th><td>[lblNyukingakukei]</td>
+        </tr>
+        <tr>
+            <td>得意先</th><td>[lblTokuisaki][lblTokuisakiname]</th>
+        </tr>
+       </table>
+        
+    </div>
+
+    <!-- section2 -->
+    <div class="Company-2">
+        <p>消費対象売掛（請求）</p>
+    </div>
+<div class="Kesikomi-table">
+    <table>
+        <tr>
+            <th>入金日</th>
+            <td>[lblNyuukinDay]</td>
+            <th>請求No</th>
+            <td>[lblSeikyuuNo]</td>
+            <th>請求日</th>
+            <td>[lblSeikyuuDate]</td>
+            <th>請求種別</th>
+            <td>[lblSeikyuusyubetsu]</td>
+            <th>業務区分</th>
+            <td>[lblGyoumukubun]</td>
+        </tr>
+        <tr>
+            <th>消込状況</th>
+            <td>[lblKesikomijoukyou]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>売掛額</th>
+            <td>[lblUrikakegaku]</td>
+            <th>消込済額</th>
+            <td>[lblKesikomisumigaku]</td>
+            <th>過不足額</th>
+            <td>[lblKabusokugaku]</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<!-- section3 -->
+
+<div class="Company-2">
+    <p>消込金額設定</p>
+</div>
+<div class="kesikomikingaku">
+    <div class="kesikomikingaku-2">
+        <p>消込額</p>
+    </div>
+    <div>
+        <input type="text">
+    </div>
+    <div class="kesikomikingaku-3">
+        <p>[cvalkekoMigaku]</p>
+    </div>
+</div>
+<div class="kesikomikingaku-3">
+    <p>[lbErrorMsg]</p>
+</div>
+<div class="kesikomikingaku">
+    <div>
+        <button>登録</button>
+    </div>
+    <div>
+        <button>キャンセル</button>
+    </div>
+</div>
+</body>
+</html>

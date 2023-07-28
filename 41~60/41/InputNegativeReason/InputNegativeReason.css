@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+
+}
+a{
+ text-decoration: none;
+}
+p{
+    font-size: 30px;
+    
+}
+.b1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #387557;
+}
+
+.header-left {
+    display: flex;
+}
+.hitei{
+    background-color:rgba(23, 91, 79, 0.71) ;
+    color: white;
+}
+.color-red{
+    color:  red;
+    
+}
+.hi2{
+    background-color: skyblue;
+}
+.kyan{
+    width: 8em;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./EmployeeRegist.css">
+    <title>Page26</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="./images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    <main>
+        <!-- 社員情報設定 -->
+        <h1>社員情報設定</h1>
+        <div class="button-box">
+            <button><a href="">社員一覧へ戻る</a></button>
+        </div>
+        <!-- 基礎情報 -->
+        <div class="info">
+            <h2>基礎情報</h2>
+            <div class="table-template">
+                <table>
+                    <tr>
+                        <td>社員ID</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>氏名</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>氏名（カナ）</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>生年月日</td>
+                        <td>データバインド</td>
+                    </tr>
+                </table>
+                <table class="box-space">
+                    <tr>
+                        <td>入社年月日　</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>退社年月日　</td>
+                        <td>データバインド</td>
+                    </tr>
+                </table>
+            </div>
+            <button class="btn-template">編集</button>
+            <!-- 変なボタン -->
+            <div>
+                <div class="hf"> 
+                    <button><a href="">SqlDataSource - dsrcEmployeeBase</a></button><br>
+                    <button><a href="">SqlDataSource - dsrcMaxEmployeeId</a></button><br>
+                    <button><a href="">HiddenField - hdnInsertedEmployeeId</a></button><br>
+                </div>
+            </div>
+        </div>
+        <!-- 付属情報 -->
+        <div class="add-info">
+            <h2>付属情報</h2>
+            <h3>tabAttachedInfo</h3>
+            <div>
+                <button>連絡先・所在</button>
+                <button><a href="">配属組織</a></button>
+            </div>
+        </div>
+        <!-- 社員連絡先 -->
+        <div class="contact-address">
+            <!-- section4 -->
+            <h2>社員連絡先</h2>
+            <div class="space">
+                <p>社員の連絡先を設定します。</p>
+            </div>
+            <div class="table-template">
+                <table>
+                    <tr>
+                        <td rowspan="3">電話1</td>
+                        <td class="tell-td">区分</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>番号</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>内線</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">電話2</td>
+                        <td class="tell-td">区分</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>番号</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>内線</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">FAX</td>
+                        <td class="tell-td">1</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">E-Mail</td>
+                        <td>データバインド</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 社員所在 -->
+        <div class="box-space">
+                <h2>社員所在</h2>
+            <div class="space">
+                <p>社員の所在を設定します。</p>
+            </div>
+            <div class="table-template">
+            <table>
+                <tr>
+                    <td>郵便番号</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>都道府県</td>
+                    <td>データバインド</th>
+                </tr>
+                <tr>
+                    <td>市区町村</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>番地</th>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>建物名</th>
+                    <td>データバインド</th>
+                </tr>
+            </table>
+            <button class="btn-template box-space"><a href="">編集</a></button>
+        </div>
+        <!-- 変なボタン -->
+        <div>
+            <div class="hf"> 
+                <button><a href="">SqlDataSource - dsrcContactAndAddress</a></button><br>
+                <button><a href="">SqlDataSource - dsrcTelephoneGroupType</a></button><br>
+            </div>
+        </div>
+
+    </main>
+
+        
+</body>
+
+</html>

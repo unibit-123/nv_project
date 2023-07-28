@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+}
+
+stable{
+    border-collapse: collapse;
+}
+a{
+    text-decoration: none;
+}
+
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+.nyuukin{
+    color: white;
+    background-color:#1E787C;
+    font-size: 20px;
+}
+
+/* section-1 */
+.Company-1{
+    margin-top: 3px;
+    background-color: #2A6197;
+    color: white;
+}
+.table-1{
+        background-color: #FCFCD1;
+        }
+.table-1 table th{
+        background-color: #94C6F2;
+        }
+.th {
+    font-weight: 100;
+    }
+.table-1 p{
+    color: red;
+}
+
+
+/* section-2 */
+
+
+.table-2-1 table tr td,
+.table-2-1 table tr th,
+.table-2-1 table tr {
+    border: 1px solid lightgray;
+}
+
+.bg-color-blue {
+    margin-bottom: 3px;
+    background-color: #94C6F2;
+}
+.bg-color-blue p {
+    color: gray;
+}
+.table-skyblue{
+    background-color: #E3FAFE;
+
+}
+
+/* button*/
+.button-1 button {
+    padding: px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}    

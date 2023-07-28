@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CustomerRegist.css">
+    <title>Page21</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="./images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    <main>
+        <!-- 受注先 -->
+        <h1>受注先</h1>
+        <div class="button-box">
+            <button><a href="">受注先別案件一覧（担当者一括変更）</a></button>
+            <button><a href="">受注先別案件一覧（一括解約）</a></button>
+            <button><a href="">受注先一覧へ戻る</a></button>
+        </div>
+        <!-- 基礎情報 -->
+        <div class="info">
+            <h2>基礎情報</h2>
+            <div class="wrap table-template">
+                <table>
+                    <tr>
+                        <td>受注先ID</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>名称</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>名称（カナ）</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>略称</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>略称（カナ）</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>敬称</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>無効</td>
+                        <td><input type="checkbox">チェックONの場合は、無効化された受注先です。</td>
+                    </tr>
+                </table>
+                <div class="wrap remarks">
+                    <p>請求書用備考</p>
+                    <textarea></textarea>
+                </div>
+            </div>
+            <button class="btn-template">編集</button>
+            <!-- 変なボタン -->
+            <div>
+                <div class="hf"> 
+                    <button><a href="">SqlDataSource - dsrcCustomerBase</a></button><br>
+                    <button><a href="">HiddenField - hdnInsertedCustomerld</a></button><br>
+                    <button><a href="">HiddenField - hdnSelectedCustomerld</a></button><br>
+                    <button><a href="">SqlDataSource - dsrcMaxCustomerld</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- 付属情報 -->
+        <div class="add-info">
+            <h2>付属情報</h2>
+            <h3>tabAttachedInfo</h3>
+            <div>
+                <button>連絡先・所在</button>
+                <button><a href="">受注先担当者</a></button>
+                <button><a href="">受注先取引口座</a></button>
+                <button><a href="">請求仕様</a></button>
+            </div>
+        </div>
+        <!-- 受注先連絡先 -->
+        <div class="contact-address">
+            <!-- section4 -->
+            <h2>受注先連絡先</h2>
+            <div class="space">
+                <p>受注先の連絡先を設定します。</p>
+            </div>
+            <div class="table-template">
+                <table>
+                    <tr>
+                        <td rowspan="3">電話1</td>
+                        <td class="tell-td">区分</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>番号</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>内線</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">電話2</td>
+                        <td class="tell-td">区分</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>番号</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>内線</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">FAX</td>
+                        <td class="tell-td">1</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>2</td><td>データバインド</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- 受注先所在 -->
+        <div>
+                <h2>受注先所在</h2>
+            <div class="space">
+                <p>自社の所在を設定します。</p>
+            </div>
+            <div class="table-template">
+            <table>
+                <tr>
+                    <td>郵便番号</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>都道府県</td>
+                    <td>データバインド</th>
+                </tr>
+                <tr>
+                    <td>市区町村</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>番地</th>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>建物名</th>
+                    <td>データバインド</th>
+                </tr>
+            </table>
+        </div>
+        <!-- 請求先住所 -->
+        <div class="billing-address">
+            <h2>請求先所在</h2>
+            <div class="space">
+                <p>自社の所在を設定します。</p>
+            </div>
+            <div class="table-template">
+            <table>
+                <tr>
+                    <td>郵便番号</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>都道府県</td>
+                    <td>データバインド</th>
+                </tr>
+                <tr>
+                    <td>市区町村</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>番地</th>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>建物名</th>
+                    <td>データバインド</th>
+                </tr>
+                <tr>
+                    <td>宛名</th>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>宛名</th>
+                    <td>データバインド</th>
+                </tr>
+            </table>
+            <button class="btn-template"><a href="">編集</a></button>
+        </div>
+        </div>
+        <!-- 自社口座一覧 -->
+        <div class="company-account">
+            <h2>自社口座一覧</h2>
+            <div class="space">
+                <p>選択ボタンをクリックして、受入自社口座を選択してください。</p>
+            </div>
+            <p class="background-skyblue color-gray">以下の条件で絞り込みを行います。</p>
+            <div class="wrap">
+                <p class="background-skyblue">名義人</p>
+                <select name="drop-down-menu" class="drop-down-menu">
+                    <option value="">データバインド</option>
+                    <option value="">データバインド</option>
+                    <option value="">データバインド</option>
+                </select>
+            </div>
+            <div class="table">
+                <table class="table-template2">
+                    <tr class="table-head background-skyblue">
+                        <th></th>
+                        <th><a href="">銀行名</a></th>
+                        <th><a href="">支店名</a></th>
+                        <th><a href="">預金種類</a></th>
+                        <th><a href="">口座番号</a></th>
+                        <th><a href="">郵便通帳記号</a></th>
+                        <th><a href="">名義人</a></th>
+                        <th><a href="">登録年月日</a></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                </table>
+                <!-- ページナビゲーション -->
+                <div class="page">
+                    <p class="background-skyblue">
+                        <a href="">1</a>
+                        <a href="">2</a>
+                    </p>
+                </div>
+            </div>
+            <div class="space">
+                <p>自社口座が未登録です。</p>
+            </div>
+            <button class="btn-template"><a href="">キャンセル</a></button>
+        </div>
+        <!-- 変なボタン -->
+        <div>
+            <div class="hf"> 
+                <button><a href="">SqlDataSource - dsrcOwnAccountList</a></button><br>
+                <button><a href="">SqlDataSource - dsrcOwnAccountListFilterOfRegister</a></button><br>
+                <button><a href="">SqlDataSource - dsrcTelephoneGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcClaimGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcClaimLimitSiteGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcClaimLimitDateGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcCustomerClaimType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcPlaySiteGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcPayDateGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcCommissionGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcCustomerAccountListFilterOfRegister</a></button><br>
+                <button><a href="">SqlDataSource - dsrcMaxAccountldOfCustomerAccount</a></button><br>
+                <button><a href="">SqlDataSource - dsrcDepositGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcPayFeeGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcCustomerContactAndAddress</a></button><br>
+                <button><a href="">SqlDataSource - dsrcCustomerPersonListFilterOfContactGroupType</a></button><br>
+                <button><a href="">SqlDataSource - dsrcMaxContactld</a></button>
+                <button><a href="">SqlDataSource - dsrcCustomerPersonGroupType</a></button>
+            </div>
+        </div>
+
+    </main>
+
+        
+</body>
+
+</html>

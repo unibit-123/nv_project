@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/EditOrderInfo.css">
+    <title>EditOrderInfo</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="img src="../../images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-button">
+        <div>
+            <button>HiddenField-hdnScrX</button>
+        </div>
+        <div>
+            <button>HiddenField-hdnSrcY</button>
+        </div>
+    </div>
+    <!-- section1 -->
+    <div class="hattyuusaki">
+        <p>案件概要変更</p>
+    </div>
+    <div class="header-button">
+        <div>
+            <button>HiddenField-hdnCancelMode</button>
+        </div>
+        <div>
+            <button>HiddenField-hdnOrderID</button>
+        </div>
+    </div>
+    
+    <div class="red-text">
+        <h5>
+            内容を変更した後、変更日を入力し実行をクリックしてください。
+        </h5>
+    </div>
+    <div class="hattyuusaki-1">
+        <div>
+            <p>変更日</p>
+        </div>
+        <div>
+            <input type="text">
+        </div>
+        <div>
+            <button>実行</button>
+        </div>
+        <div>
+            <button>中止</button>
+        </div>
+    </div>
+    <div class="red-text">
+        <h5>変更日は必ず設定してください。</h5>
+        <h5>変更日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>変更日に存在しない日付が入力されています。</h5>
+        <h5>物件名は必ず設定してください。</h5>
+        <h5>受注先名は必ず設定してください。</h5>
+        <h5>案件名は必ず設定してください。</h5>
+        <h5>請求日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>請求日に存在しない日付が入力されています。</h5>
+        <h5>作業日は必ず設定してください。</h5>
+        <h5>作業完了日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>作業完了日に存在しない日付が入力されています。</h5>
+        <h5>作業開始日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>作業開始日に存在しない日付が入力されています。</h5>
+        <h5>分類1を選択してください。</h5>
+        <h5>分類2を選択してください。</h5>
+        <h5>契約書取交日はYYYY/MM/DD形式で入力してください。</h5>
+        <h5>契約書取交日に存在しない日付が入力されています。</h5>
+        <h5>年間販管費が未入力です。</h5>
+        <h5>年間販管費整数で入力してください。</h5>
+        <h5>[lblErrMsg_Apploval]</h5>
+    </div>
+    <!-- section2 -->
+    <div class="uper">
+        <p>案件概要(受注ID:M999999)</p>
+    </div>
+    <div class="section-2-table">
+        <table>
+            <tr>
+                <th rowspan="2">物件</th>
+                <td rowspan="2" class="uper-button">
+                    <button>HiddenField-hdnArticleID</button>
+                    <button>HiddenField-hdnArticleID_Old</button>
+                    <p><a href="">[lbtnArticleName]</a></p>
+                    <p>[lblOldArticleName]</p>
+                </td>
+                <td rowspan="2">
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>受注先</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnCostomerID</button>
+                    <button>HiddenField-hdnCostomerID_Old</button>
+                    <p><a href="">[lbtnCustomerName]</a></p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th rowspan="2">報告書提出先</th>
+                <td rowspan="2">
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <th>案件連絡先</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnTopCustomerID</button>
+                    <button>HiddenField-hdnTopCustomerID_Old</button>
+                    <p><a href="">[lblTopCustomerName]</a></p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th>案件名</th>
+                <td colspan="5" class="uper-button">
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>HiddenField-hdnContractType</button>
+                    <br>
+                    <button>SqlDataSource-dsrcCDOrderCategory1</button>
+                    <br>
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>SqlDataSource-dsrcCDOrderCategory2</button>
+                    <br>
+                    <input type="text" size="50" value="案件名">
+                    <br>
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>SqlDataSource-dsrcCDOrderCategory2</button>
+                    <br>
+                    <input type="text" size="15" value="案件名">
+                    <span>[lblContactType]</span>
+                </td>
+                <th>契約状況</th>
+                <td class="uper-button">
+                    <p>商談中</p>
+                    <button>HiddenField-hdnArticleID</button><br>
+                    <button>HiddenField-hdnContractState</button>
+                    <p>未承認</p>
+                    <button>HiddenField-hdnApprovalUserID</button><br>
+                    <p>[lblLatestUser]</p>
+                </td>
+
+            </tr>
+            <tr>
+                <th>担当１</th>
+                <td class="uper-button" colspan="">
+                    <button>HiddenField-hdnEmployeeID1</button>
+                    <button>HiddenField-hdnEmployeeID1_Old</button>
+                    <p>担当者名１</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>担当２</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnEmployeeID2</button>
+                    <button>HiddenField-hdnEmployeeID2_Old</button>
+                    <p>担当者名２</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>定額初回No.</th>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <th>請求日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+                <th>作業日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <span>～</span>
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <br>
+                    <span style="color: rgb(173, 173, 173); font-size: 12px;">(定額、継続スポットの場合、請求日と作業完了日は指定できません)</span>
+                    <br>
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+                <th>請求明細行の税区分</th>
+                <td>
+                    <select name="" id="">
+                        <option value="">税別</option>
+                    </select>
+                    <button>
+                        HiddenField - hdnOldOrderTaxCategory
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th>契約書有無</th>
+                <td colspan="2">
+                    <select name="" id="">
+                        <option value="">なし</option>
+                    </select>
+                </td>
+                <th>契約書を取交した日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+                <th>年間販管費</th>
+                <td>
+                    <input type="text" size="10" value="999999">
+                </td>
+            </tr>
+            <tr>
+                <th>請求書に関する備考</th>
+                <td colspan="7">
+                    <textarea name="" id="" cols="50" rows="1">999999</textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

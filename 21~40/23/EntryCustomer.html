@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./EntryCustomer.css">
+    <title>page23</title>
+</head>
+<body>
+    <div class="lblCompanyName">
+        <img src="./images/CompanyLogo.jpg" alt="">
+        <p>lblCompanyName<br> ビルメンテナンスシステム</p>
+    </div>
+
+    <div class="button">
+        <button><a href="">HiddenField-hdnScrX</a></button><br>
+        <button><a href="">HiddenField-hdnScrY</a></button>
+    </div>
+    <div class="property">
+        <h4>物件登録</h4>
+    </div>
+
+    <div class="sousa">
+        <p>操作</p>
+        <button><a href="">登録</a></button>
+        <button><a href="">キャンセル</a></button>
+        <p><font color="gray">※入力後、必ず左記のいずれかをクリックしてください。</p>
+    </div>
+    
+    <div class="touroku">
+        <p>受注先名は必ず入力してください。</p>
+        <p>受注先名カナは必ず入力してください。</p>
+        <p>受注先名カナは半角カナか「-」で入力してください。</p>
+        <p>敬称は必ず入力してください。</p>
+        <p>郵便番号は必ず入力してください。</p>
+        <p>郵便番号は数字７桁で入力してください。</p>
+        <p>都道府県は必ず入力してください。</p>
+        <p>市町村は必ず入力してください。</p>
+        <p>番地は必ず入力してください。</p>
+        <p>請求先郵便番号は数字７桁で入力してください。</p>
+        <p>請求先住所を入力する場合は、請求先郵便番号は必ず入力してください。</p>
+        <p>請求先住所を入力する場合は、請求先都道府県は必ず入力してください。</p>
+        <p>請求先住所を入力する場合は、請求先市区町村は必ず入力してください。</p>
+        <p>請求先住所を入力する場合は、請求先番地は必ず入力してください。</p>
+        <p>請求先あて名は１から入力してください。</p>
+        <p>電話番号は必ず入力してください。</p>
+        <p>受入自社口座は必ず選択してください。</p>
+        <p>請求仕様 - 請求仕様は必ず選択してください。</p>
+        <p>請求仕様 - 締め日の周期は必ず選択してください。</p>
+        <p>請求仕様 - 締め日の日付は必ず選択してください。</p>
+        <p>入金仕様 - 入金日の周期は必ず選択してください。</p>
+        <p>入金仕様 - 入金日の日付は必ず選択してください。</p>
+    </div>
+    <div class="title">
+        <h4>基本情報</h4>
+    </div>
+    <table class="baseinfo">
+        <tr>
+            <td class="bg-blue" >受注先ID</td>
+            <td>[uppate_lblCustomerId]<br>
+            <td class="bg-blue" rowspan="3">請求書用備考<br>
+                <font color="gray"><font size="2">※請求書以外の用途で使用しないでください。
+            </td>
+            <td> <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select></td>
+        </tr>
+        <tr>
+            <td class="bg-blue">名称 <br> 
+                <font color="gray"><font size="2">（例:株式会社 ABC）</td>
+            <td><input type=""></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="bg-blue">名称（カナ）<br>
+                 <font color="gray"><font size="2">（例:カブシキガイシャエービーシー）
+            </td>
+            <td><input type=""></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="bg-blue">敬称</td>
+            <td> <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select></td>
+        </tr>
+    </table>
+
+    <div class="title">
+        <h4>受注先住所</h4>
+    </div>
+    <div  class="space">
+        <p><font color="gray">受注先の所在を設定します。</p>
+    </div>
+    <div class="table-black">
+        <table>
+            <tr>
+                <td class="bg-blue">郵便番号<br>
+                     <font color="gray"><font size="2">（例:10023451002345）</td>
+                <td><input type=""></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">都道府県<br>
+                     <font color="gray"><font size="2">（例;東京都）</td>
+                <td><input type=""></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">市区町村<br>
+                     <font color="gray"><font size="2">（例:新宿区市谷田町）</td>
+                <td><input type=""></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">番地<br> 
+                    <font color="gray"><font size="2">（例:1-23-45）</td>
+                 <td><input type=""></td>
+            </tr>
+            <tr> 
+                <td class="bg-blue">建物名<br>
+                     <font color="gray"><font size="2">（例:ABCビル 4F）</td>
+                <td><input type=""></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">宛名１<font color="red">※要敬称</font><br>
+                    <font color="gray"><font size="2">（（例:会社名）   
+                </td>
+                <td><input type=""></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">宛名２<font color="red">※要敬称</font><br>
+                    <font color="gray"><font size="2">（（例:会社名）   
+                </td>
+                <td><input type=""></td>
+            </tr>
+        </table>
+    </div>
+    <div class="title">
+        <h4>請求仕様</h4>
+    </div>
+    <div  class="space">
+        <p><font color="gray">請求の仕様を設定します。</p>
+    </div>
+    <div class="table-black">
+        <table>
+            <tr>
+                <td class="bg-blue">請求仕様</td>
+                <td> <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bg-blue">締め日付</td>
+                <td class="bg-blue">周期</td>
+                <td> <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select></td>
+                <td class="bg-blue">日付</td>
+                <td> <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select></td>
+            </tr>
+        </table>
+    </div>
+    <div class="title">
+        <h4>入金仕様</h4>
+    </div>
+    <div class="space">
+        <p><font color="gray">入金の仕様を設定します。</p>
+    </div>
+    <div class="table-black">
+        <table>
+            <tr>
+                <td class="bg-blue">入金日付</td>
+                <td><button><a href="">HiddenField-hdnAccountldOfCustomerClaimType</a></button><br>
+                    <font color="gray">請求後の</font>
+                    <span class="bg-blue">周期</span>
+                     <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select>
+                    <span class="bg-blue">日付</span>
+                     <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td class="bg-blue" rowspan="4">受入自社口座</td>
+                <td>
+                    <span class="bg-blue">金融機関</span>
+                </td>
+                <td>
+                    [update_lblBankCode] <br>
+                    [update_lblBankName]
+                </td>
+                <td>
+                    <span class="bg-blue">支店</span>
+                </td>
+                <td>
+                    [update_lblBranchCode] <br>
+                    [update_lblBranchName]
+                </td>
+                <td rowspan="2">
+                    <button><a href="">一覧選択</a></button>
+                    
+                </td>
+                <td rowspan="2">
+                    <button><a href="">クリア</a></button>
+                </td>                
+            </tr>
+            <tr>
+                <td>
+                    <span class="bg-blue">預金種別</span>
+                </td>
+                <td>
+                    [update_lblDepositeGroupType] <br>
+                    [update_lblDepositeGroupName]
+                </td>
+                <td>
+                    <span class="bg-blue">口座番号</span>
+                </td>
+                <td>
+                    [update_lblAccountNumber] <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bg-blue">郵便通帳記号</span>
+                </td>
+                <td>
+                    [update_lblPostBookMark] 
+                </td>
+                <td>
+                    <span class="bg-blue">郵便通帳番号</span>
+                </td>
+                <td>
+                    [update_lblPostBookNunber] 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span class="bg-blue">名義人</span>
+                </td>
+                <td>
+                    [update_lblRegisterName] <br>
+                    [update_lblRegisterNameOfKana]
+                </td>
+            </tr>
+            <tr></tr>
+
+        </table>
+    </div>
+    <div class="title" >
+        <h4 >自社口座一覧</h4>
+    </div>
+    <div class="space">
+        <p><font color="gray">選択ボタンをクリックして、受入自社口座を選択してください。</p>
+    </div>
+
+    <p class="bg-blue" color-gray>以下の条件で絞り込みを行います。</p>
+    <div class="wrap">
+        <p class="bg-blue">名義人</p>
+        <select name="drop-down-menu" class="drop-down-menu">
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+            <option value="">データバインド</option>
+        </select>
+    </div>
+    <div class="table">
+        <table class="table-template2">
+            <tr class="table-head background-skyblue">
+                <th></th>
+                <th><a href="">銀行名</a></th>
+                <th><a href="">支店名</a></th>
+                <th><a href="">預金種類</a></th>
+                <th><a href="">口座番号</a></th>
+                <th><a href="">郵便通帳記号</a></th>
+                <th><a href="">郵便通帳番号</a></th>
+                <th><a href="">名義人</a></th>
+                <th><a href="">登録年月日</a></th>
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+            </tr>
+            
+            <tr class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr>
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+            <tr class="table-skyblue">
+                <td>
+                    <button><a href="">選択</a></button>
+                </td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+                <td>データバインド</td>
+
+            </tr>
+        </table>
+        <!-- ページナビゲーション -->
+        <div class="page">
+            <p class="bg-blue">
+                <a href="">1</a>
+                <a href="">2</a>
+             </p>
+         </div>
+     </div>
+
+     <div class="space">
+        <p>自社口座が未登録です。</p>
+    </div>
+    <button class="btn-template"><a href="">キャンセル</a></button>
+</div>
+<!-- 変なボタン -->
+<div>
+    <div class="hf"> 
+        <button><a href="">SqlDataSource - dsrcOwnAccountList</a></button><br>
+        <button><a href="">SqlDataSource - dsrcOwnAccountListFilterOfRegister</a></button><br>
+        <button><a href="">SqlDataSource - dsrcClaimLimitSiteGroupType</a></button><br>
+        <button><a href="">SqlDataSource - dsrcClaimLimitDateGroupType</a></button><br>
+        <button><a href="">SqlDataSource - dsrcPaySiteGroupType</a></button><br>
+        <button><a href="">SqlDataSource - dsrcPayDateGroupType</a></button><br>
+        <button><a href="">SqlDataSource - dsrcCommissionGroupType</a></button><br>
+        <button><a href="">SqlDataSource - dsrcPayFreeGroupType</a></button><br>
+
+    </div>
+</div>
+
+    
+
+    
+</body>
+</html>

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/NewOrder.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="img src="../../images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-button">
+        <div>
+            <button>HiddenField-hdnScrX</button>
+        </div>
+        <div>
+            <button>HiddenField-hdnSrcY</button>
+        </div>
+    </div>
+        <!-- section1 -->
+        <div class="hattyuusaki">
+            <p>案件新規入力</p>
+        </div>
+        <div class="header-button">
+            <div>
+                <button>HiddenField-hdnContractType</button>
+            </div>
+            <div>
+                <button>HiddenField-hdnOrderID</button>
+            </div>
+        </div>
+        <div class="header-button-1">
+            <div>
+                <p>操作</p>
+            </div>
+            <div>
+                <button>一時保存（商談中）</button>
+            </div>
+            <div>
+                <button>入力破棄</button>
+            </div>
+            <div>
+                <p>※入力後、必ず左記のいづれかをクリックしてください。</p>
+            </div>
+        </div>
+            
+        <div class="red-text">
+            <h5>追加の明細を入力した後、変更日を入力し実行をクリックしてください。</h5>
+        </div>
+        <div class="hattyuusaki-1">
+            <div>
+                <p>契約開始日</p>
+            </div>
+            <div>
+                <input type="text">
+            </div>
+            <div>
+                <button>実行</button>
+            </div>
+            <div>
+                <button>中止</button>
+            </div>
+        </div>
+        <div class="red-text">
+            <h5>契約・売上日は必ず設定してください。</h5>
+            <h5>契約・売上日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>契約・売上日に存在しない日付が入力されています。</h5>
+            <h5>物件名は必ず設定してください。</h5>
+            <h5>受注先名は必ず設定してください。</h5>
+            <h5>案件名は必ず入力してください。</h5>
+            <h5>営業担当を一人以上設定してください。</h5>
+            <h5>請求日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>請求日に存在しない日付が入力されています。</h5>
+            <h5>作業開始日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>作業開始日に存在しない日付が入力されています。</h5>
+            <h5>作業完了日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>作業完了日は存在しない日付が入力されています。</h5>
+            <h5>一つ以上の受注明細を入力してください。</h5>
+            <h5>発注明細のみの設定はできません。</h5>
+            <h5>項目名が未入力です。</h5>
+            <h5>単価が未入力です。</h5>
+            <h5>単価は整数で入力してください。</h5>
+            <h5>数量が未入力です。</h5>
+            <h5>数量はゼロを入力してください。</h5>
+            <h5>数量には数字を入力してください。</h5>
+            <h5>数量の小数点は1桁までです。</h5>
+            <h5>単位が未入力です。</h5>
+            <h5>月額（金額）が未入力です。</h5>
+            <h5>月額（金額）は整数を入力してください。</h5>
+            <h5>契約開始日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>契約開始日に存在しない日付が入力されています。</h5>
+            <h5>初回支払日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>初回支払日は存在しない日付が入力されています。</h5>
+            <h5>支払日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>支払日は存在しない日付が入力されています。</h5>
+            <h5>発注先を設定してください。</h5>
+            <h5>分類１を選択してください。</h5>
+            <h5>分類２を選択してください。</h5>
+            <h5>契約書取交日はYYYY/MM/DD形式で入力してください。</h5>
+            <h5>契約書取交日に存在しない日付が入力されています。</h5>
+            <h5>年間販管費が未入力です。</h5>
+            <h5>年間販管費は整数で入力してください。</h5>
+            <h5>[lblErrMsg_Apploval]</h5>
+        </div>
+        <!-- section2 -->
+    <div class="uper">
+        <p>案件概要(受注ID:M999999)</p>
+    </div>
+    <div class="section-2-table">
+        <table>
+            <tr>
+                <th rowspan="2">物件</th>
+                <td rowspan="2" class="uper-button">
+                    <button>HiddenField-hdnArticleID</button>
+                    <p><a href="">[lbtnArticleName]</a></p>
+                    <p>[lblOldArticleName]</p>
+                </td>
+                <td rowspan="2">
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>受注先</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnCostomerID</button>
+                    <p><a href="">[lbtnCustomerName]</a></p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th rowspan="2">報告書提出先</th>
+                <td rowspan="2">
+                    <input type="text">
+                    <p>[lbReportCustomer]</p>
+                </td>
+            </tr>
+            <tr>
+                <th>案件連絡先</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnTopCustomerID</button>
+                    <p><a href="">[lblTopCustomerName]</a></p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <th>案件名</th>
+                <td colspan="5" class="uper-button">
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>HiddenField-hdnContractType</button>
+                    <br>
+                    <button>SqlDataSource-dsrcCDOrderCategory1</button>
+                    <br>
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>SqlDataSource-dsrcCDOrderCategory2</button>
+                    <br>
+                    <input type="text" size="50" value="案件名">
+                    <br>
+                    <select name="" id="">
+                        <option value="">データバインド</option>
+                    </select>
+                    <br>
+                    <button>SqlDataSource-dsrcMstOrderName</button>
+                    <br>
+                    <h4>分類１:分類２:</h4>
+                    <h4>定額管理業務[lblContactType]</h4>
+                </td>
+                <th>契約状況</th>
+                <td class="uper-button">
+                    <p>商談中</p>
+                    <button>HiddenField-hdnArticleID</button><br>
+                    <button>HiddenField-hdnContractState</button>
+                    <p>未承認</p>
+                    <button>HiddenField-hdnApprovalUserID</button><br>
+                    <p>[lblLatestUser]</p>
+                </td>
+
+            </tr>
+            <tr>
+                <th>担当１</th>
+                <td class="uper-button" colspan="">
+                    <button>HiddenField-hdnEmployeeID1</button>
+                    <p>担当者名１</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>担当２</th>
+                <td class="uper-button">
+                    <button>HiddenField-hdnEmployeeID2</button>
+                    <p>担当者名２</p>
+                </td>
+                <td>
+                    <button>
+                        •••
+                    </button>
+                </td>
+                <th>定額初回No.</th>
+                <td>
+                    <input type="text" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <th>請求日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+                <th>作業日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <span>～</span>
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                    <br>
+                    <span style="color: rgb(173, 173, 173); font-size: 12px;">(定額、継続スポットの場合、請求日と作業完了日は指定できません)</span>
+                    
+                </td>
+                <th>請求明細行の税区分</th>
+                <td>
+                    <select name="" id="">
+                        <option value="">税別</option>
+                    </select>
+                    
+                </td>
+            </tr>
+            <tr>
+                <th>契約書有無</th>
+                <td colspan="2">
+                    <select name="" id="">
+                        <option value="">なし</option>
+                    </select>
+                </td>
+                <th>契約書を取交した日</th>
+                <td colspan="2">
+                    <input type="text" size="10" value="YYYY/MM/DD">
+                </td>
+                <th>年間販管費</th>
+                <td>
+                    <input type="text" size="10" value="999999">
+                </td>
+            </tr>
+            <tr>
+                <th>請求書に関する備考</th>
+                <td colspan="7">
+                    <textarea name="" id="" cols="50" rows="1"></textarea>
+                    <p>[lblBilComment]</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="flex">
+        <div>
+            <h5>明細の操作</h5>
+        </div>
+        <div>
+            <button>空白行を追加</button>
+        </div>
+    </div>
+    
+    <!-- section3 -->
+    <div class="uper">
+        <p>明細一覧（金額）</p>
+    </div>
+    <div class="section-3-table">
+        <table>
+            <tr>
+                <th class="section-3-table-background-b section-3-table-width">品目名</th>
+                <th colspan="6" class="section-3-table-background-r">受注明細</th>
+                <th colspan="9" class="section-3-table-background-g">発注明細</th>
+                <th rowspan="2">発注を分割</th>
+            </tr>
+            <tr>
+                <th class="section-3-table-background-b">概要</th>
+                <th class="section-3-table-background-r">数量</th>
+                <th class="section-3-table-background-r">単位</th>
+                <th class="section-3-table-background-r">-</th>
+                <th class="section-3-table-background-r">月額</th>
+                <th class="section-3-table-background-r">税</th>
+                <th class="section-3-table-background-r">契約開始日</th>
+                <th class="section-3-table-background-g">数量</th>
+                <th class="section-3-table-background-g">単位</th>
+                <th class="section-3-table-background-g">単価</th>
+                <th class="section-3-table-background-g">合計金額</th>
+                <th class="section-3-table-background-g">税</th>
+                <th class="section-3-table-background-g">-</th>
+                <th class="section-3-table-background-g">開始日</th>
+                <th class="section-3-table-background-g">支払日</th>
+                <th class="section-3-table-background-g">定子</th>
+            </tr>
+            <tr>
+                <th>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="select-wid">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <p>-</p>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div class="text-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2"></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <p>ー</p>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <button>+</button>
+                </th>
+            </tr>
+                
+            <tr>
+                <th>
+                    <div class="flex">
+                        <div>
+                            <p>概要：</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th colspan="8"></th>
+                <td>
+                    <button>...</button>
+                </td>
+                
+            </tr>
+           
+            <tr>
+                <th>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="select-wid">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <p>-</p>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div class="text-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2"></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <p>ー</p>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <button>+</button>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <div class="flex">
+                        <div>
+                            <p>概要：</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th colspan="8"></th>
+                <td>
+                    <button>...</button>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <th>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="select-wid">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <p>-</p>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div class="text-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2"></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <p>ー</p>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <button>+</button>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <div class="flex">
+                        <div>
+                            <p>概要：</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th colspan="8"></th>
+                <td>
+                    <button>...</button>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <th>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="select-wid">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <P>-</P>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div class="text-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2"></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <p>ー</p>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <button>+</button>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <div class="flex">
+                        <div>
+                            <p>概要：</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th colspan="8"></th>
+                <td>
+                    <button>...</button>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <th>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div class="select-wid">
+                        <select name="" id="">
+                            <option value=""></option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <p>-</p>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <div>
+                            <p>-</p>
+                        </div>
+                        <div class="text-box">
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th rowspan="2"></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th>
+                    <div>
+                        <select name="" id="">
+                            <option value="">別</option>
+                        </select>
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div class="text-box">
+                        <input type="text">
+                    </div>
+                </th>
+                <th></th>
+                <th>
+                    <div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <p>ー</p>
+                    </div>
+                </th>
+                <th rowspan="2">
+                    <button>+</button>
+                </th>
+            </tr>
+
+            <tr>
+                <th>
+                    <div class="flex">
+                        <div>
+                            <p>概要：</p>
+                        </div>
+                        <div>
+                            <input type="text">
+                        </div>
+                    </div>
+                </th>
+                <th colspan="8"></th>
+                <td>
+                    <button>...</button>
+                </td>
+                
+            </tr>
+
+
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/OrderSelectCondition_ApplovalState.css">
+    <title>Page51</title>
+</head>
+<body>
+    <header>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>
+                        <a href="">ログアウト</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>案件検索</h1>
+        <!-- 検索条件入力 -->
+        <div class="search-box">
+            <h2>検索条件入力（一般検索）</h2>
+            <div class="color-red">
+                <p>検索期間はYYYY/MM/DD形式で入力してください。</p>
+                <p>検索年月に存在しない日付けが入力されています。</p>
+                <p>契約区分に条件を指定してください。（いずれか一つ以上を指定）</p>
+                <p>承認状況に条件を指定してください。（いずれか一つ以上を指定）</p>
+            </div>
+        </div>
+        <!-- テーブル部分 -->
+        <div class="table">
+            <p class="clear-btn"><a href="">検索条件クリア</a></p>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <td>物件名</td>
+                    <td><input type="text"></td>
+                    <td class="wrap"><p class="background-th">物件名カナ</p><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>営業担当者</td>
+                    <td>
+                        <div class="wrap">
+                            <p class="background-th">ID</p>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <p class="background-th vertical-box">氏名</p>
+                            <div>
+                                <div class="wrap">
+                                    <input type="text">
+                                    <p>（部分一致）</p>
+                                </div>
+                                <select name="" id="">
+                                    <option value="">データバインド</option>
+                                </select>
+                                <p>（完全一致）</p>
+                                <button class=""><a href="">SqlDataSource - dsrcEmployee</a></button>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="radio">担当者１のみ
+                        <input type="radio">担当者２のみ
+                        <input type="radio">担当者１～２
+                    </td>
+                </tr>
+                <tr>
+                    <td>承認担当者</td>
+                    <td>
+                        <div class="wrap">
+                            <p class="background-th">ID</p>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <p class="background-th vertical-box">氏名</p>
+                            <div>
+                                <div class="wrap">
+                                    <input type="text">
+                                    <p>（部分一致）</p>
+                                </div>
+                                <select name="" id="">
+                                    <option value="">データバインド</option>
+                                </select>
+                                <p>（完全一致）</p>
+                                <button class=""><a href="">SqlDataSource - dsrcApplovalUser</a></button>
+                            </div>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>契約状況</td>
+                    <td>
+                        <input type="checkbox">要申請
+                        <input type="checkbox">申請中
+                        <input type="checkbox">承認済
+                        <input type="checkbox">否認済
+                    </td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>取締役承認日</td>
+                    <td class="wrap">
+                        <input type="text">
+                        <p>~</p>
+                        <input type="text">
+                        <p class="color-gray">入力例2001/01/01~2001/06/30</p>
+                    </td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td>契約区分</td>
+                    <td>
+                        <input type="checkbox">定額
+                        <input type="checkbox">スポット
+                        <input type="checkbox">継続スポット
+                    </td>
+                    <td></td>
+                </tr>
+                
+            </table>
+            <button class="btn-template"><a href="">検索</a></button>
+
+        </div>
+    </main>
+</body>
+</html>

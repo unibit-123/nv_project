@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/NyukinSetteiHensyuPage">
+    <title>page32</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="../../images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+                <div>ログアウト</div>
+            </div>
+        </div>
+    </div>
+    <div class="nyuukin">
+        <p>入金設定および売掛消込設定</p>
+    </div>
+
+    <!-- section-1 -->
+    <div class="Company-1">
+        <p>入金設定編集</p>
+    </div>
+    <div class="table-1">
+        <table>
+            <tr>
+                <th>取引日（入金日）</th>
+                <td><input type="text"> <img src="./images/Calendar_scheduleHS.png" alt=""></td>
+                <td><p>[cvalToriHikiBi]</p></td>
+                
+            </tr>
+            <tr>
+                <th>入金実際額</th>
+                <td><input type="text"></td>
+                <td><p>[cvalNyukinJissaiGakus]</p></td>
+                
+            </tr>
+            <tr>
+                <th>振込手数料額</th>
+                <td><input type="text"></td>
+                <td><p>[cvalTesuuRyoGaku]</p></td>
+                
+            </tr>
+            <tr>
+                <th>振込手数料負担区分</th>
+                <td> <select name="drop-down-menu" class="drop-down-menu">
+                    <option value="">バインドなし</option>
+                    <option value="">バインドなし</option>
+                    <option value="">バインドなし</option>
+                </select>
+                </td>
+                <td><p>[Futankubun]</p></td>
+                
+            </tr>
+            <tr>
+                <th>入金額計</th>
+                <td>[lblGakukei]</td>
+                <td><p>[cvalMsgGakukei]</p></td>
+                
+            </tr>
+            <tr>
+                <th >得意先</th>
+                <td>[lblTokuisakiName]
+                <a href="">
+                    <button>一覧選択</button>
+                </a>
+                <p>[cvalTokuisaki]</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>[lblErrorMsg]</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">
+                        <button>登録</button>
+                    </a>
+                    <a href="">
+                        <button>キャンセル</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- section-2 -->
+    <section class="table-2">
+        <div class="Company-1">
+            <p>得意先選択</p>
+        </div>
+        <div class="table-2-span">
+            <span>
+                選択ボタンをクリックして、得意先を選んでください。
+            </span>
+        </div>
+        
+        <div class="bg-color-blue">
+            <p>
+                以下の条件で絞込を行います
+            </p>
+        </div>
+        <div>
+            <span class="bg-color-blue table-2-span">名称</span>
+            <input type="text">
+            <a href="">
+                <button>
+                    絞込み
+                </button>
+            </a>
+        </div>
+
+        <div class="table-2-1">
+        <table>
+                    <tr class="bg-color-blue">
+                        <th>操作</th>
+                        <th>得意先ID</th>
+                        <th>得意先名（カナ・漢字）</th>
+                        <th>得意先住所</th>
+                        <th>電話番号１</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bg-color-blue">
+                        <td colspan="7">
+                            <a href="">1</a>
+                            <a href="">2</a>
+                        </td>
+                    </tr>
+        </table>
+        </div>
+        <!--  -->
+        <!-- <div class="footer-page">
+            <a href="">1</a>
+            <a href="">2</a>
+        </div> -->
+        <div class="button-1">
+            <button>
+                <a href="">キャンセル</a>
+            </button>
+        </div>
+</section>
+
+
+
+    
+</body>
+</html>
