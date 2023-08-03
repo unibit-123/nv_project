@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/SeikyuKomokuIchiranPage.css">
+    <title>Page98</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>ログアウト</div>
+                </div>
+            </div>
+    </div>
+
+    <!-- Button -->
+    <div>
+        <div>
+            <a href="">
+                <button class="btn-padding">HiddenField - hdnScrX</button>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <button class="btn-padding">HiddenField - hdnScrY</button>
+            </a>
+        </div>
+    </div>
+
+    <!-- 請求項目一覧・締め設定 -->
+    <div>
+        <h3 class="h3Title">請求項目一覧・締め設定</h3>
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <div>
+                <a href="">
+                    <button>請求締め実行</button>
+                </a>
+                <span class="error-msg">[lblNotShime]</span>
+            </div>
+            <div style="display: flex; align-items: center;">
+                <div>
+                    <input type="checkbox" name="" id="">
+                    <span>角印あり</span>
+                    <br>
+                    <input type="checkbox" name="" id="">
+                    <span>送付先住所印字</span>
+                </div>
+                <div style="margin-left: 20px;">
+                    <div>
+                        <a href="">
+                            <button>請求書(内訳無)印刷</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button>請求書(内訳有)印刷</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <button>請求書印刷設定へ</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="error-msg">[lblErrorMsg]</span>
+        </div>
+    </div>
+
+    <!-- 請求概要 -->
+    <div>
+        <h4 class="h4Title">請求概要</h4>
+        <div class="seikyu-table" style="display: flex;">
+            <!-- 1st table -->
+            <table>
+                <tr>
+                    <th>請求書No</th>
+                    <td>[lblSeikyusyoNo]</td>
+                </tr>
+                <tr>
+                    <th>前回御請求額</th>
+                    <td>lblZenkakiGoseikyuugaku</td>
+                </tr>
+                <tr>
+                    <th>今回御買上額</th>
+                    <td>lblKonkakuOkaiagegaku</td>
+                </tr>
+            </table>
+            <!-- 2nd table -->
+            <table>
+                <tr>
+                    <th>契約区分</th>
+                    <td>lblKeiyakuKuben</td>
+                </tr>
+                <tr>
+                    <th>当月入金額</th>
+                    <td>lblTougetuNyuukingaku</td>
+                </tr>
+                <tr>
+                    <th>消費税額</th>
+                    <td>lblSyouhiZeigaku</td>
+                </tr>
+            </table>
+            <!-- 3rd table -->
+            <table>
+                <tr>
+                    <th>得意先</th>
+                    <td>lblTokuisakiID</td>
+                </tr>
+                <tr>
+                    <th>繰越額</th>
+                    <td>lblKurikosigaku</td>
+                </tr>
+                <tr>
+                    <th>今回御請求額</th>
+                    <td>lblKonkaiGoseikyuugaku</td>
+                </tr>
+            </table>
+            <!-- 4th table -->
+            <table>
+                <tr>
+                    <td colspan="2">lblTokuisakiNm</td>
+                </tr>
+                <tr>
+                    <th>締め種別</th>
+                    <td>lblSimeSyubetu</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <br>
+                    </td>
+                </tr>
+            </table>
+            <!-- 5th table -->
+            <table>
+                <tr>
+                    <th>請求日</th>
+                    <td>lblSeikyuubi</td>
+                </tr>
+                <tr>
+                    <th>請求締め実行日</th>
+                    <td>lblSeikyuuJimeJittukoubi</td>
+                </tr>
+                <tr>
+                    <th>入金予定日</th>
+                    <td>lblNyuukinYoteibi</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- 請求項目一覧（請求明細） -->
+    <div class="seikyu-table-2" style="margin-top: 10px;">
+        <h4 class="h4Title">請求項目一覧（請求明細）</h4>
+        <table>
+            <tr>
+                <th>操作</th>
+                <th>物件</th>
+                <th>契約</th>
+                <th>請求項目摘要</th>
+                <th>請求項目単価</th>
+                <th>請求項目数量</th>
+                <th>請求項目単位</th>
+                <th>請求項目計</th>
+                <th>税区分</th>
+                <th>売上計上日</th>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                    <br>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                </td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td>データバインド</td>
+            </tr>
+            <tr class="table-td-bg">
+                <td>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                    <br>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                </td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                    <br>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                </td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td>データバインド</td>
+            </tr>
+            <tr class="table-td-bg">
+                <td>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                    <br>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                </td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                    <br>
+                    <a href="">
+                        <button>選択</button>
+                    </a>
+                </td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>データバインド</td>
+                <td></td>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <td colspan="10">
+                    <a href="">
+                        <button style="width: auto;">請求項目の追加</button>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- button -->
+    <div>
+        <div>
+            <a href="">
+                <button class="btn-padding">HiddenField - hidSeikyuSiyouKubun</button>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <button class="btn-padding">HiddenField - hdnExecFlag</button>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <button class="btn-padding">HiddenField - hdnNextExecFlag</button>
+            </a>
+        </div>
+        <div>
+            <a href="">
+                <button class="btn-padding">SqlDataSource - dsrcForDdl_TaxCategory</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

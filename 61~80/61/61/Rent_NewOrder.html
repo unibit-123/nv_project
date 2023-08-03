@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Rent_NewOrder.css">
+    <title>Rent_NewOrder</title>
+</head>    
+<div class="navbar">
+    <div class="header">
+         <div class="header-left">
+            <div class="header-left-img">
+                <img src="../../images/CompanyLogo.jpg" alt="">
+            </div>
+            <div class="header-left-span">
+                <span>ルート</span>
+                <span>ルート</span>
+                <div class="css-arrow-right"></div>
+                <span>ルート</span>
+                <span>ルート</span>
+                <span>ルート</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div>[lblUserId]</div>
+            <span class="rog">ログアウト</span>
+        </div>
+        
+        
+    </div>
+        
+        <button class="mojibotan">HiddenField - hdnScrX</button><br>
+        <button class="mojibotan">HiddenField - hdnScrY</button>
+        <div>
+         <h1 class="midasi">案件新規入力</h1>
+        </div>
+        <button class="mojibotan">HiddenField - hdnContractType</button><br>
+        <button class="mojibotan">HiddenField - hdnOrderID</button><br>
+        <button class="mojibotan">HiddenField - hdnRentOrder</button><br>
+    <div>
+        <table>
+        <th>
+            操作
+        <th>
+        <th>
+        <button style="width: 200px;">一時保存（商談中）</button>        
+        </th> 
+        <th>
+            <button style="width: 100px;">入力破棄</button>
+            <span class="hai">※入力後、必ず左記のいずれかをクリックしてください。</span>
+        </th>
+        </table>
+    </div>     
+    <div>
+        <span class="aka">
+            追加の明細を入力した後、変更日を入力し実行をクリックしてください。
+        </span>
+              <table class="keiyakukaisi">
+                  <th>
+                     契約開始日
+                  </th>
+                 <td><input type="text"></td>
+                  <td>
+                     <button>実行</button>
+                  </td>
+                  <td>
+                      <button>中止</button>
+                  </td>
+              </table>
+        <span class="aka">契約・売上日は必ず設定してください。</span><br>
+        <span class="aka">契約・売上日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">契約・売上日に存在しない日付が入力されています。</span><br>
+        <span class="aka">物件名は必ず設定してください。</span><br>
+        <span class="aka">受注先名は必ず設定してください。</span><br>
+        <span class="aka">案件名は必ず入力してください。</span><br>
+        <span class="aka">営業担当を一人以上設定してください。</span><br>
+        <span class="aka">請求日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">請求日に存在しない日付が入力してください。</span><br>
+        <span class="aka">作業完了日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">作業完了日に存在しない日付が入力されています。</span><br>
+        <span class="aka">請求の割合は必ず設定してください。</span><br>
+        <span class="aka">請求の割合に数字以外が入力されています。</span><br>
+        <span class="aka">請求の割合にゼロは入力できません。</span><br>
+        <span class="aka">請求の割合の小数点は一桁までです。</span><br>
+        <span class="aka">請求の割合が、指定できる範囲を超えています。（0.1～100.0）</span><br>
+        <span class="aka">下記手数料は必ず設定してください。</span><br>
+        <span class="aka">下記手数料に数字以外が入力されています。</span><br>
+        <span class="aka">契約書取交日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">契約書取交日に存在しない日付が入力されています。</span><br>
+        <span class="aka">一つ以上の受注明細を入力してください。</span><br>
+        <span class="aka">発注明細のみの設定はできません。</span><br>
+        <span class="aka">項目名が未入力です。</span><br>
+        <span class="aka">面積数量が未入力です。</span><br>
+        <span class="aka">面積数量はゼロを入力できません。</span><br>
+        <span class="aka">面積数量には数字を入力してください。</span><br>
+        <span class="aka">面積数量の小数点は２桁までです。</span><br>
+        <span class="aka">面積単位が未入力です。</span><br>
+        <span class="aka">賃料単価が未入力です。</span><br>
+        <span class="aka">賃料単価は整数で入力してください。</span><br>
+        <span class="aka">月額（金額）が未入力です。</span><br>
+        <span class="aka">月額（金額）は整数を入力してください。</span><br>
+        <span class="aka">業務開始日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">業務開始日に存在しない日付が入力されています。</span><br>
+        <span class="aka">共益費は整数を入力してください。</span><br>
+        <span class="aka">敷金は整数を入力してください。</span><br>
+        <span class="aka">礼金は整数を入力してください。</span><br>
+        <span class="aka">初回支払日はYYYY/MM/DD形式で入力してください。</span><br>
+        <span class="aka">初回支払日に存在しない日付が入力されています。</span><br>
+        <span class="aka">発注先を設定してください。</span><br>
+        <span class="aka">[lblErrMsg_Apploval]</span><br>
+    </div>
+    <div>
+        <span class="tag">案件概要（受注ID :M999999</span>
+    </div>
+
+        <div>
+            <table border="1" class="anken">
+            <tr>
+                <th>
+                    物件
+                </th>
+                <td class="bukken">
+                    <button class="mojibotan">HiddenField-hdnArtcileID</button><br>
+                    <a href="">[lbtnArticleName]</a><br>
+                    [lblOldArticleName]
+                </td>
+
+                <td>
+                    <button>･･･</button>
+                </td>
+                <th>受注先</th>
+                <td class="jyutyuu">
+                    <button class="mojibotan">HiddenField-hdnCustomerID</button><br>
+                    <a href="">[lbtnCustomerName]</a>  
+                </td>
+                <td>
+                    <button>･･･</button>
+                </td>
+                <th rowspan="2" style="width: 100px;">契約状況</th>
+
+                <td rowspan="2" colspan="2" class="jyoukyou">商談中<br>
+                    <button class="mojibotan">HiddenField-hdnOrderUserID</button><br>
+                    <button class="mojibotan">HiddenField-hdnContractState</button><br>
+                     未承認<br>
+                     <button class="mojibotan">HiddenField-hdnApprovalUseID</button><br><br>
+                    [lblLatestUser]
+                </td>
+
+            </tr>
+
+            <tr>
+               <th>案件名</th>
+               <td colspan="5">
+                <select style="width: 570px;">
+                    <option value="">データバインド</option>
+                </select><br>
+                <button class="mojibotan">SqlDataSource-dsrcMstOrderName</button><br>
+                <span class="teigaku">定額管理業務[lblContractType]</span>
+                </td>
+            </tr>
+        
+       
+            <tr class="tan">
+                <th>担当１</th>
+                    <td>
+                        <button class="mojibotan">HiddenField-hdnEmployeeID1</button><br>
+                         担当者名１ 
+                    </td>
+                    <td>
+                         <button>･･･</button>
+                    </td>
+                <th>担当２</th>
+                    <td>
+                        <button class="mojibotan">HiddenField-hdnEmployeeID1</button><br>
+                        担当者名２
+                    </td>
+                    <td>
+                        <button>･･･</button>
+                    </td>
+                <th>担当３</th>
+                    <td>
+                        <button class="mojibotan">HiddenField-hdnEmployeeID1</button><br>
+                        担当者名３
+                    </td>
+                    <td>
+                        <button>･･･</button>
+                    </td>
+
+            </tr>
+            <tr class="sei">    
+                <th>
+                    請求の<br>割合
+                </th>
+                <td colspan="2">
+                    資料に対して
+                    <input type="text" class="text">
+                    <span class="rent">[lblRentRate]%</span>
+                </td>
+                <th>
+                    下限<br>手数料
+                </th>
+                <td colspan="2"><input type="text" class="kagen">
+                    円[lblLowestBill]
+                </td>
+                <th>
+                    請求明細行<br>の税区分
+                </th>
+                <td colspan="2">
+                    <select>
+                        <option value="">税別</option>
+                    </select>
+                    [lblOrderTaxCategory]
+                </td>
+            </tr>
+
+            <tr class="kei">
+                <th>契約書<br>有無</th>
+
+                <td colspan="2">
+                    <select>
+                        <option value="">なし</option>
+                    </select>
+                    [lblContractExist]
+                </td>
+                    <th>
+                        契約書を<br>取交した日
+                    </th>
+                        <td colspan="5">
+                             <input type="text" placeholder="YYYY/MM/DD">
+                             [lblContractExecDate]
+                        </td>
+            </tr>
+        </div>
+            
+            </table>
+        <span class="tag">
+            承認先指定
+        </span>
+        <table border="1" class="syounin">
+            <tr>
+            <th>取締役承認</th>
+            <th>品質管理部承認</th>
+            <th>次長承認</th>
+            <th>部門長承認</th>
+            </tr>
+            <tr>
+                <td><select><option value="">バインドなし</option></select></td>
+                <td><select><option value="">バインドなし</option></select></td>
+                <td><select><option value="">バインドなし</option></select></td>
+                <td><select><option value="">バインドなし</option></select></td>
+            </tr>
+
+        </table>
+        <div>
+            <span>
+                明細の操作
+            </span>
+            <button class="kara">空白行を追加</button>
+        </div>
+
+        <div>
+            <span class="tag">明細一覧（金額）</span>
+        </div>
+            <table border="1">
+                
+                <tr>
+                   
+                     <th class="ao">
+                        品目名
+                    </th>
+                      <th class="ao">
+                          概要
+                        </th>
+                    <th class="ao">
+                        面積数<br>量
+                     </th>
+                    <th class="ao">
+                         面積<br>単位
+                    </th>
+                    <th class="usiroaka">賃料単価</th>
+                    <th class="usiroaka">請求額計</th>
+                    <th class="usiroaka">税</th>
+                    <th class="usiroaka">業務開始日</th>
+                    <th class="ao">共益費</th>
+                    <th class="ao">敷金</th>
+                    <th class="ao">礼金</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text"  class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="men">
+                    </td>
+                    <td>
+                        <input type="text" class="tani">
+                    </td>
+                    <td>
+                        <input type="text"  class="tin">
+                    </td>
+                    <td class="seikyuu">
+                        <input type="text" class="seikyuu">
+                    </td>
+                    <td><select><option value="">別</option></select></td>  
+                    <td>
+                        <input type="text" class="gyo">
+                    </td>
+                    <td>
+                        <input type="text"  class="kyou">
+                    </td>
+                    <td>
+                        <input type="text" class="sikirei">
+                    </td>
+                    <td>
+                        <input type="text"  class="sikirei">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <input type="text"  class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="men">
+                    </td>
+                    <td>
+                        <input type="text" class="tani">
+                    </td>
+                    <td>
+                        <input type="text"  class="tin">
+                    </td>
+                    <td class="seikyuu">
+                        <input type="text" class="seikyuu">
+                    </td>
+                    <td><select><option value="">別</option></select></td>  
+                    <td>
+                        <input type="text" class="gyo">
+                    </td>
+                    <td>
+                        <input type="text"  class="kyou">
+                    </td>
+                    <td>
+                        <input type="text" class="sikirei">
+                    </td>
+                    <td>
+                        <input type="text"  class="sikirei">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <input type="text"  class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="men">
+                    </td>
+                    <td>
+                        <input type="text" class="tani">
+                    </td>
+                    <td>
+                        <input type="text"  class="tin">
+                    </td>
+                    <td class="seikyuu">
+                        <input type="text" class="seikyuu">
+                    </td>
+                    <td><select><option value="">別</option></select></td>  
+                    <td>
+                        <input type="text" class="gyo">
+                    </td>
+                    <td>
+                        <input type="text"  class="kyou">
+                    </td>
+                    <td>
+                        <input type="text" class="sikirei">
+                    </td>
+                    <td>
+                        <input type="text"  class="sikirei">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <input type="text"  class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="men">
+                    </td>
+                    <td>
+                        <input type="text" class="tani">
+                    </td>
+                    <td>
+                        <input type="text"  class="tin">
+                    </td>
+                    <td class="seikyuu">
+                        <input type="text" class="seikyuu">
+                    </td>
+                    <td><select><option value="">別</option></select></td>  
+                    <td>
+                        <input type="text" class="gyo">
+                    </td>
+                    <td>
+                        <input type="text"  class="kyou">
+                    </td>
+                    <td>
+                        <input type="text" class="sikirei">
+                    </td>
+                    <td>
+                        <input type="text"  class="sikirei">
+                    </td>
+                </tr>
+
+                
+                <tr>
+                    <td>
+                        <input type="text"  class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="hingai">
+                    </td>
+                    <td>
+                        <input type="text" class="men">
+                    </td>
+                    <td>
+                        <input type="text" class="tani">
+                    </td>
+                    <td>
+                        <input type="text"  class="tin">
+                    </td>
+                    <td class="seikyuu">
+                        <input type="text" class="seikyuu">
+                    </td>
+                    <td><select><option value="">別</option></select></td>  
+                    <td>
+                        <input type="text" class="gyo">
+                    </td>
+                    <td>
+                        <input type="text"  class="kyou">
+                    </td>
+                    <td>
+                        <input type="text" class="sikirei">
+                    </td>
+                    <td>
+                        <input type="text"  class="sikirei">
+                    </td>
+                </tr>
+
+                
+              
+            </table>
+        </div>
+
+        
+        
+        
+
+
+
+
+
+
+</div>
+<main>

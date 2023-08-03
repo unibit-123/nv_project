@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/PurchaseDetailSpot.css">
+    <title>Page88</title>
+</head>
+<body>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div>ログアウト</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header button -->
+        <div class="header-button">
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnRediredtFrom</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_EstateId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_EstateNameKj</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_SupplierId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_SupplierNameKj</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_PurchaseId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_PurchaseNameKj</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_BusinessTalkResult</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_ContractType</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_ContractDateFrom</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_ContractDateTo</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_CancelationDateFrom</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_CancelationDateTo</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_EmployeeId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_EmployeeNameKj</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnIO_Approval</button>
+                </a>
+            </div>
+        </div>
+
+
+        <div>
+        <!-- 商談成立受注案件 -->
+        <section class="section-1">
+            <h4 class="section-1-bg">商談成立外注調達案件</h4>
+            <div class="flex">
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <h5>発注書印刷</h5>
+                            </td>
+                            <td>
+                                <a href="">
+                                    <button class="flex-btn">発注書印刷</button>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>解約日</h5>
+                            </td>
+                            <td>
+                                <input type="text" name="" id="">
+                                <img src="/images/Calendar_scheduleHS.png" alt="">
+                                <a href="">
+                                    <button class="flex-btn">一括解約</button>
+                                </a>
+                                <span class="color-red small-red">入力形式が不正です。存在しない日付です。</span>
+                                <span style="font-size: small; font-weight: 600;">承認</span>
+                                <a href="">
+                                    <button>承認</button>
+                                </a>
+                                <a href="">
+                                    <button>否認</button>
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="flex-btn">外注調達案件一覧へ戻る</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 商談成立受注案件の下 Button -->
+        <div class="header-button">
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnPurchaseId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>HiddenField - hdnPurchaseDetailId</button>
+                </a>
+            </div>
+            <div>
+                <a href="" class="">
+                    <button>SqlDataSource - dsrcSelect_OrderDetaild_PreSchedule</button>
+                </a>
+            </div>
+        </div>
+
+        <!-- 案件概要 TABLE -->
+        <section class="anken-table">
+            <h4 class="anken-header">
+                案件概要
+            </h4>
+            
+            <!-- table -->
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">案件名</span>
+                        </td>
+                        <td>
+                            <span class="anken-table-bg">ID</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">案件名</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">契約区分</span>
+                            <select name="" id=""></select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">仕入先</span>
+                        </td>
+                        <td>
+                            <span class="anken-table-bg">ID</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">名称</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">住所</span>
+                            <span>〒データバインドデータバインド</span>
+                            <span class="anken-table-bg">仕入先担当者</span>
+                            <select name="" id=""></select>
+                            <button>詳細</button>
+                        </td>
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <span class="anken-table-bg">物件</span>
+                        </td>
+                        <td>
+                            <span class="anken-table-bg">ID</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">名称</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">住所</span>
+                            <span>〒データバインドデータバインド</span>
+                            <span class="anken-table-bg">物件担当者</span>
+                            <select name="" id=""></select>
+                            <button>詳細</button>
+                        </td>
+                    </tr> -->
+                    <!-- <tr>
+                        <td>
+                            <span class="anken-table-bg">作業担当</span>
+                        </td>
+                        <td>
+                            データバインド
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">営業担当</span>
+                        </td>
+                        <td>
+                            <span class="anken-table-bg">担当1</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">担当2</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">担当3</span>
+                            <span>データバインド</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">名種日付</span>
+                        </td>
+                        <td>
+                            <span class="anken-table-bg">引合日</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">商談成否日</span>
+                            <span>データバインド</span>
+                            <select name="" id=""></select>
+                            <span class="anken-table-bg">契約日</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">解約日</span>
+                            <span>データバインド</span>
+                            <span class="anken-table-bg">承認</span>
+                            <span>データバインド</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <a href="">
+                                <button class="flex-btn">編集</button>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="header-button">
+                    <div>
+                        <a href="" class="">
+                            <button>SqlDataSource - dsrcOutLine_Spot</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="">
+                            <button>SqlDataSource - dsrcForDdl_ContractType</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="">
+                            <button>SqlDataSource - dsrcForDdl_BusinessTalkResult</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="" class="">
+                            <button>SqlDataSource - dsrcForDdl_CustomerContactList</button>
+                        </a>
+                    </div>
+                    <!-- <div>
+                        <a href="" class="">
+                            <button>SqlDataSource - dsrcForDdl_EstateContactList</button>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- tabOrder-button-area -->
+            <div>
+                <button class="tabOrder-button-area">tabOrderDetailLists</button>
+            </div>
+            <div class="tabOrder-button-textleft">
+                <button>外注金額設定</button>
+                <button>支払方式設定</button>
+            </div>
+            <div>
+                <button class="tabOrder-button-area">mvPrePurchase</button>
+            </div>
+            <div>
+                <button class="tabOrder-button-area">vwPrePurchaseList</button>
+            </div>
+
+
+
+        <!-- 継続スポット品目一覧（全体表示） -->
+        <section>
+            <h4 class="h4Title">スポット品目一覧（全体表示）</h4>
+            <!-- table -->
+
+            <div>
+                <table>
+                    <tr>
+                        <th>物件名
+                            <br>
+                            案件名
+                        </th>
+                        <th>大項目品目名</th>
+                        <th>中項目品目名</th>
+                        <th>小項目品目名</th>
+                        <th>発注数量</th>
+                        <th>発注単位</th>
+                        <th>発注単価</th>
+                        <th>発注金額</th>
+                        <th>受注金額</th>
+                        <th>粗利</th>
+                        <th>契約開始年月日</th>
+                        <th>契約終了年月日</th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td>
+                            <div>
+                                <a href="">
+                                    <button>編集</button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td>
+                            <div>
+                                <a href="">
+                                    <button>編集</button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td>
+                            <div>
+                                <a href="">
+                                    <button>編集</button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td></td>
+                        <td>
+                            <div>
+                                <a href="">
+                                    <button>編集</button>
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div>
+                    <a href="">
+                        <button class="width-btn">
+                            vwPrePurchaseDetail
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+
+
+
+            <!-- table -->
+            <div class="spot-table">
+                <div>
+                    <h4 class="h4Title"> スポット品目(詳細)</h4>
+                    <table>
+                        <tr>
+                            <th colspan="2" style="text-align: left;">受注明細概要</th>
+                        </tr>
+                        <tr>
+                            <th>作業品目名</th>
+                            <td>
+                                <span style="background-color: #99CDFF;">作業品目名</span>
+                                <span>データバインド</span>
+                                <span style="background-color: #99CDFF;">摘要</span>
+                                <span>データバインド</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>金額</th>
+                            <td>
+                                <span style="background-color: #99CDFF;">数量</span>
+                                <span>データバインド</span>
+                                <span style="background-color: #99CDFF;">単位</span>
+                                <span>データバインド</span>
+                                <span style="background-color: #99CDFF;">単価</span>
+                                <span>データバインド</span>
+                                <span style="background-color: #99CDFF;">金額</span>
+                                <span>データバインド</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>備考</th>
+                            <td>
+                                <span>データバインド</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>作業年月</th>
+                            <td>データバインド</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <a href="">
+                        <button>案件明細一覧へ戻る</button>
+                    </a>
+                </div>
+            </div>
+
+
+        </section>
+
+<!--  -->
+<div>
+    <div>
+        <div>
+            <table>
+                <tr>
+                    <th colspan="2" style="text-align: left;">受注明細概要</th>
+                </tr>
+                <tr>
+                    <th>金額</th>
+                    <td>
+                        <span class="bg-color-blue">数量</span>
+                        <span>データバインド</span>
+                        <span class="bg-color-blue">単位</span>
+                        <span>データバインド</span>
+                        <span class="bg-color-blue">単価</span>
+                        <span>データバインド</span>
+                        <span class="bg-color-blue">金額</span>
+                        <span>データバインド</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th>備考</th>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="">
+                            <button>編集</button>
+                        </a>
+                        <a href="">
+                            <button>削除</button>
+                        </a>
+                    </td>
+    
+                </tr>
+            </table>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcOrderDetail_Spot
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcPurchaseDetail_Spot
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        HiddenField - hdnDetailType_Spot
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcPurchaseList_Interior_Reference_Top
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcPurchaseList_Interior_Reference_Middle
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcPurchaseList_Interior_Reference_Bottom
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcUpdate_PurchaseDetail
+                    </button>
+                </a>
+            </div>
+            <div>
+                <a href="">
+                    <button>
+                        SqlDataSource - dsrcPurchaseList_OrderId
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="table">
+        <div class="table-span">
+            <span>自社組織・社員選択</span>
+        </div>
+        <div class="table-span-2">
+            <span>
+                選択ボタンをクリックして、組織・社員を選んでください。
+            </span>
+        </div>
+        <div class="table-2-button">
+            <a href="">
+                <button>
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcFilter_CompanyOrganization</span>
+                </button>
+            </a>
+        </div>
+        <div class="table-2-button">
+            <a href="">
+                <button>
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcFilter_CompanyEmployeeNameKj</span>
+                </button>
+            </a>
+        </div>
+        <div class="bg-color-blue">
+            <span class="color-lightgray">
+                以下の条件で絞込を行います
+            </span>
+        </div>
+        <div>
+            <span class="bg-color-blue table-span-3">組織名</span>
+            <select name="" id="">
+                <option value="">データバインド</option>
+            </select>
+            <span class="bg-color-blue table-span-3">氏名</span>
+            <select name="" id="">
+                <option value="">データバインド</option>
+            </select>
+        </div>
+        <table>
+                    <tr class="table-head background-skyblue">
+                        <th rowspan="12">所属</th>
+                        <th><a href=""></a></th>
+                        <th><a href="">組織ID</a></th>
+                        <th><a href="">組織名称</a></th>
+                        <th><a href="">社員ID</a></th>
+                        <th><a href="">氏名</a></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td >
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr class="bg-color-blue">
+                        <td colspan="7">
+                            <a href="">1</a>
+                            <a href="">2</a>
+                        </td>
+                    </tr>
+        </table>
+        <!--  -->
+        <!-- <div class="footer-page">
+            <a href="">1</a>
+            <a href="">2</a>
+        </div> -->
+        <div class="footer-button">
+            <a href="">
+                <button>
+                    <h4>SqlDataSource</h4>
+                    <span> - dsrcSearch_CompanyEmpoloyee</span>
+                </button>
+            </a>
+            <a href="">
+                <button>
+                    <h4>HiddenField</h4>
+                    <span> - hdnNumber</span>
+                </button>
+            </a>
+        </div>
+        <div class="footer-button-2">
+            <button>
+                <a href="">キャンセル</a>
+            </button>
+        </div>
+</section>
+</div>
+
+</body>
+</html>

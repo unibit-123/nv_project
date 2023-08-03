@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="../../css/EditWorkFrequency_Week.css">
+    <title>page140</title>
+</head>
+<body> <!-- header -->
+    <div class="navbar">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-left-img">
+                    <img src="../../images/CompanyLogo.jpg" alt="">
+                </div>
+                <div class="header-left-span">
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <div class="css-arrow-right"></div>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                    <span>ルート</span>
+                </div>
+            </div>
+            
+            <div class="header-right">
+                <div>[lblUserId]</div>
+            </div>
+        </div>
+    </div>
+    
+    <h1 class="midashi">作業仕様-頻度設定変更</h1>
+    
+    <div>
+        <button class="dekabotan">HiddenField - hdnContractType</button><br>
+        <button class="dekabotan">HiddenField -hdnOrderID</button><br>
+        <button class="dekabotan">HiddenField - hdnOrderDetailID</button><br>
+        <button class="dekabotan">HiddenField - hdnContractType</button><br>
+        <button class="dekabotan">HiddenField - hdnRequestDisp</button><br>
+    </div>
+    
+    <div class="akamoji">
+        <span>作業仕様を変更した後、変更日を入力し実行をクリックしてください。</span>
+    </div>
+
+    <div>
+        <table>
+             <tr>
+    <th style="background-color:rgb(122, 203, 234);">変更日</th>
+
+                <td><input type="text"></td>
+
+                <td><button>実行</button>
+                    <button>中止</button>
+                </td>
+             </tr>
+         </table>
+    </div>
+
+    <div class="akamoji">
+        <p>変更日は必ず設定してください。</p>
+        <p>変更日はYYY/MM/DD形式で入力してください。</p>
+        <p>変更日に存在しない日付が入力してください。</p>
+        <p>開始時刻に、実在しない時刻が入力されています。</p>
+        <p>開始時刻はHH:MMの形式で入力してください。</p>
+        <p>開始時刻に、実在しない時刻が入力されています。</p>
+        <p>開始時刻はHH:MMの形式で入力してください。</p>
+        <p>終了時刻に、存在しない時刻が入力されています。</p>
+        <p>終了時刻はHH:MMの形式で入力してください。</p>
+        <p>終了時刻に、存在しない時刻が入力されています。</p>
+        <p>終了時刻はHH:MMの形式で入力してください。</p>
+    </div>
+
+    <div class="section-1">
+        <span>頻度設定:基本</span>
+    </div>
+
+    <div>
+        <table border="1" class="hyou-1">
+
+            <tr>
+                <th>頻度種別</th>
+                <td colspan="3"></td>
+            </tr>
+
+            <tr>
+                <th>祝祭日</th>
+
+                <td colspan="3"><input type="radio" name="syukusai">作業しない
+                    <input type="radio" name="syukusai">その日に作業する
+                    <input type="radio" name="syukusai">前営業日に作業する
+                    <input type="radio" name="syukusai">翌日営業日に作業する
+                </td>
+
+            </tr>
+
+            <tr>
+
+                <th>作業曜日</th>
+                <th class="umu">作業有無</th>
+                <th class="jikoku">作業時刻</th>
+                <th>備考(作業内容の詳細など)</th>
+
+            </tr>
+            
+            <tr>
+
+                <td>月</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>火</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>水</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>木</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>金</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>土</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <td>日</td>
+                <td><input type="checkbox"></td>
+                <td class="jikoku"><input type="text">～<input type="text"></td>
+                <td class="bikou"><input type="text"></td>
+
+            </tr>
+
+            <tr>
+
+                <th>作業予定の備考</th>
+                <td class="bikou" colspan="3">
+                    <input type="text">
+                </td>
+
+            </tr>
+
+        </table>
+    </div>
+
+        <div class="section-2">
+            <span>頻度設定:〇〇〇</span>
+        </div>
+
+        <div>
+            <div>
+                <label><input type="radio" name="radio">基本頻度設定に準拠</label>
+                <label><input type="radio" name="radio" >以下の頻度設定に則る</label>
+            </div>
+         </div>
+
+         <div>
+            <table border="1" class="hyou-2">
+    
+                <tr>
+                    <th>頻度種別</th>
+                    <td colspan="3"></td>
+                </tr>
+    
+                <tr>
+                    <th>祝祭日</th>
+    
+                    <td colspan="3"><input type="radio" name="syukusai">作業しない
+                        <input type="radio" name="syukusai">その日に作業する
+                        <input type="radio" name="syukusai">前営業日に作業する
+                        <input type="radio" name="syukusai">翌日営業日に作業する
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業曜日</th>
+                    <th class="umu">作業有無</th>
+                    <th class="jikoku">作業時刻</th>
+                    <th>備考(作業内容の詳細など)</th>
+    
+                </tr>
+                
+                <tr>
+    
+                    <td>月</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>火</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>水</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>木</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>金</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>土</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>日</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業予定の備考</th>
+                    <td class="bikou" colspan="3">
+                        <input type="text">
+                    </td>
+    
+                </tr>
+    
+            </table>
+
+         </div>
+
+         <div class="section-2">
+            <span>頻度設定:〇〇〇</span>
+        </div>
+
+        <div>
+            <div>
+                <label><input type="radio" name="radio">基本頻度設定に準拠</label>
+                <label><input type="radio" name="radio" >以下の頻度設定に則る</label>
+            </div>
+         </div>
+
+         <div>
+            <table border="1" class="hyou-2">
+    
+                <tr>
+                    <th>頻度種別</th>
+                    <td colspan="3"></td>
+                </tr>
+    
+                <tr>
+                    <th>祝祭日</th>
+    
+                    <td colspan="3"><input type="radio" name="syukusai">作業しない
+                        <input type="radio" name="syukusai">その日に作業する
+                        <input type="radio" name="syukusai">前営業日に作業する
+                        <input type="radio" name="syukusai">翌日営業日に作業する
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業曜日</th>
+                    <th class="umu">作業有無</th>
+                    <th class="jikoku">作業時刻</th>
+                    <th>備考(作業内容の詳細など)</th>
+    
+                </tr>
+                
+                <tr>
+    
+                    <td>月</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>火</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>水</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>木</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>金</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>土</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>日</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業予定の備考</th>
+                    <td class="bikou" colspan="3">
+                        <input type="text">
+                    </td>
+    
+                </tr>
+    
+            </table>
+
+         </div>
+         <div class="section-2">
+            <span>頻度設定:〇〇〇</span>
+        </div>
+
+        <div>
+            <div>
+                <label><input type="radio" name="radio">基本頻度設定に準拠</label>
+                <label><input type="radio" name="radio" >以下の頻度設定に則る</label>
+            </div>
+         </div>
+
+         <div>
+            <table border="1" class="hyou-2">
+    
+                <tr>
+                    <th>頻度種別</th>
+                    <td colspan="3"></td>
+                </tr>
+    
+                <tr>
+                    <th>祝祭日</th>
+    
+                    <td colspan="3"><input type="radio" name="syukusai">作業しない
+                        <input type="radio" name="syukusai">その日に作業する
+                        <input type="radio" name="syukusai">前営業日に作業する
+                        <input type="radio" name="syukusai">翌日営業日に作業する
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業曜日</th>
+                    <th class="umu">作業有無</th>
+                    <th class="jikoku">作業時刻</th>
+                    <th>備考(作業内容の詳細など)</th>
+    
+                </tr>
+                
+                <tr>
+    
+                    <td>月</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>火</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>水</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>木</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>金</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>土</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>日</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業予定の備考</th>
+                    <td class="bikou" colspan="3">
+                        <input type="text">
+                    </td>
+    
+                </tr>
+    
+            </table>
+
+         </div>
+
+         <div class="section-2">
+            <span>頻度設定:〇〇〇</span>
+        </div>
+
+        <div>
+            <div>
+                <label><input type="radio" name="radio">基本頻度設定に準拠</label>
+                <label><input type="radio" name="radio" >以下の頻度設定に則る</label>
+            </div>
+         </div>
+
+         <div>
+            <table border="1" class="hyou-2">
+    
+                <tr>
+                    <th>頻度種別</th>
+                    <td colspan="3"></td>
+                </tr>
+    
+                <tr>
+                    <th>祝祭日</th>
+    
+                    <td colspan="3"><input type="radio" name="syukusai">作業しない
+                        <input type="radio" name="syukusai">その日に作業する
+                        <input type="radio" name="syukusai">前営業日に作業する
+                        <input type="radio" name="syukusai">翌日営業日に作業する
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業曜日</th>
+                    <th class="umu">作業有無</th>
+                    <th class="jikoku">作業時刻</th>
+                    <th>備考(作業内容の詳細など)</th>
+    
+                </tr>
+                
+                <tr>
+    
+                    <td>月</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>火</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>水</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>木</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>金</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>土</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>日</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業予定の備考</th>
+                    <td class="bikou" colspan="3">
+                        <input type="text">
+                    </td>
+    
+                </tr>
+    
+            </table>
+
+         </div>
+
+         <div class="section-2">
+            <span>頻度設定:〇〇〇</span>
+        </div>
+
+        <div>
+            <div>
+                <label><input type="radio" name="radio">基本頻度設定に準拠</label>
+                <label><input type="radio" name="radio" >以下の頻度設定に則る</label>
+            </div>
+         </div>
+
+         <div>
+            <table border="1" class="hyou-2">
+    
+                <tr>
+                    <th>頻度種別</th>
+                    <td colspan="3"></td>
+                </tr>
+    
+                <tr>
+                    <th>祝祭日</th>
+    
+                    <td colspan="3"><input type="radio" name="syukusai">作業しない
+                        <input type="radio" name="syukusai">その日に作業する
+                        <input type="radio" name="syukusai">前営業日に作業する
+                        <input type="radio" name="syukusai">翌日営業日に作業する
+                    </td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業曜日</th>
+                    <th class="umu">作業有無</th>
+                    <th class="jikoku">作業時刻</th>
+                    <th>備考(作業内容の詳細など)</th>
+    
+                </tr>
+                
+                <tr>
+    
+                    <td>月</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>火</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>水</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>木</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>金</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>土</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <td>日</td>
+                    <td><input type="checkbox"></td>
+                    <td class="jikoku"><input type="text">～<input type="text"></td>
+                    <td class="bikou"><input type="text"></td>
+    
+                </tr>
+    
+                <tr>
+    
+                    <th>作業予定の備考</th>
+                    <td class="bikou" colspan="3">
+                        <input type="text">
+                    </td>
+    
+                </tr>
+    
+            </table>
+
+         </div>
+
+
+         
+

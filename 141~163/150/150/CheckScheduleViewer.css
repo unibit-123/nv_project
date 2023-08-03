@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+}
+.era{
+color: red;
+}
+.grei button{
+    background-color: rgb(224, 223, 223);
+    width: max-content;
+    text-align: left;
+    
+}
+
+.color-red {
+    color: red
+    
+}
+.color-red button{
+    padding: 8px;
+}
+

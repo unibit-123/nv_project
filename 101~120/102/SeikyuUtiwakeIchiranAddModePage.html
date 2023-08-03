@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/SeikyuUtiwakeIchiranAddModePage.css">
+    <title>page102</title>
+</head>
+<body>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div><a href="">ログアウト</a></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- 請求内訳一覧 -->
+
+        <h4 class="section-1-bg" > 請求内訳一覧</h4>
+        
+        <!-- 請求概要 -->
+        <section class="anken-table">
+            <h4 class="anken-header">
+                請求概要
+            </h4>
+            <div class="table-yellow">
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">請求書No</span>
+                        </td>
+                        <td rowspan="2">[lblSeikyusyoNo]</td>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">契約区分</span>
+                        </td>
+                        <td rowspan="2">[]lblKeiyakuKubun</td>
+                        <td>
+                            <span class="anken-table-bg">得意先</span>
+                        </td>
+                        <td>[lblTokuisakiID]</td>
+                        <td colspan="2">[lblTokuisakiNm]</td>
+                        <td>
+                            <span class="anken-table-bg">請求日</span>
+                        </td>
+                        <td>[seikyubi]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">繰越額</span>
+                        </td>
+                        <td>[lblKurikosigaku]</td>
+                        <td rowspan="1" class="anken-table-bg">締め種別</td>
+                        <td>[lblSimeSyubetu]</td>
+                        <td rowspan="3" class="anken-table-bg">請求締め実行日</td>
+                        <td rowspan="3">[lblSeikyuuJImeJittukoubi]</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">前回御請求額</span>
+                        </td>
+                        <td rowspan="2">[lblZenkaiGoseikyugaku]</td>
+                        <td rowspan="3">
+                            <span class="anken-table-bg">当月入金額</span>
+                        </td>
+                        <td rowspan="3">[lblTougetuNyukingaku]</td>
+                        <td rowspan="2" class="anken-table-bg">今回御請求額</td>   
+                        <td>[lblKonkaiGoseikyugaku]</td> 
+                        <td></td>
+                        <td></td>                   
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span  class="anken-table-bg">今回御買上額</span>
+                        </td>
+                        <td rowspan="2">[lblKonkaiOkaiagegaku]</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">消費税額</span>
+                        </td>
+                        <td>[lblSyouhiZeigaku]</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">入金予定日</span>
+                        </td>
+                        <td>[lblNyukinYoteibi]</td>
+                    </tr>
+                </table>
+    
+            </div>
+        
+
+        <!-- 請求内訳項目設定 -->
+        <section class="anken-table">
+            <h4 class="anken-header">
+                請求内訳項目設定
+            </h4>
+            
+            <!-- table -->
+            <div>
+                <table>
+                    
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">内訳項目名</span>
+                        </td>
+                        <td colspan="2"><input type="text"></td>
+                        <td colspan="2" class="red">[cvalUtiwakeKomokumei]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">内訳摘要</span>
+                        </td>
+                        <td colspan="2"><input type="text"></td>
+                        <td colspan="2" class="red">[cvalUtiwakeTekiyou]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求数量</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[lblSuuryo][cvalSuuryo]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求単位</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[lblSeikyuTani]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求単価</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[cvalTani]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求金額</span>
+                        </td>
+                        <td >[lblSeikyuKomokukei]</td>
+                        <td colspan="3" class="red">[lblSeikyuKingaku][cavlSeikyuKingaku]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">税区分</span>
+                        </td>
+                        <td >
+                            <select name="" id="">
+                                <option value="">（バインドなし）</option>
+                            </select>
+                        </td>
+                        <td colspan="3" class="red">[CustomVaildator6]</td>
+                    </tr>
+                </table>
+
+                <div class="red">[lblErrorMsg]</div>
+                <div>
+                    <a href="">
+                        <button>登録</button>
+                    </a>
+                    <a href="">
+                        <button>キャンセル</button>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+</body>
+</html>

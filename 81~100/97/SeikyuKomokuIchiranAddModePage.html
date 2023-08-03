@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/SeikyuKomokuIchiranAddModePage.css">
+    <title>page97</title>
+</head>
+<body>
+        <!-- header -->
+        <div class="navbar">
+            <div class="header">
+                <div class="header-left">
+                    <div class="header-left-img">
+                        <img src="../../images/CompanyLogo.jpg" alt="">
+
+                    </div>
+                    <div class="header-left-span">
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <div class="css-arrow-right"></div>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                        <span>ルート</span>
+                    </div>
+                </div>
+                
+                <div class="header-right">
+                    <div>[lblUserId]</div>
+                    <div><a href="">ログアウト</a></div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- 請求項目一覧、および請求締め設定 -->
+
+        <h4 class="section-1-bg" > 請求項目一覧、および請求締め設定</h4>
+        
+        <!-- 請求概要 -->
+        <section class="anken-table">
+            <h4 class="anken-header">
+                請求概要
+            </h4>
+            <div class="table-yellow">
+                <table>
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">請求書No</span>
+                        </td>
+                        <td rowspan="2">[lblSeikyusyoNo]</td>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">契約区分</span>
+                        </td>
+                        <td rowspan="2">[]lblKeiyakuKubun</td>
+                        <td>
+                            <span class="anken-table-bg">得意先</span>
+                        </td>
+                        <td>[lblTokuisakiID]</td>
+                        <td colspan="2">[lblTokuisakiNm]</td>
+                        <td>
+                            <span class="anken-table-bg">請求日</span>
+                        </td>
+                        <td>[seikyubi]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">繰越額</span>
+                        </td>
+                        <td>[lblKurikosigaku]</td>
+                        <td rowspan="1" class="anken-table-bg">締め種別</td>
+                        <td>[lblSimeSyubetu]</td>
+                        <td rowspan="3" class="anken-table-bg">請求締め実行日</td>
+                        <td rowspan="3">[lblSeikyuuJImeJittukoubi]</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">前回御請求額</span>
+                        </td>
+                        <td rowspan="2">[lblZenkaiGoseikyugaku]</td>
+                        <td rowspan="3">
+                            <span class="anken-table-bg">当月入金額</span>
+                        </td>
+                        <td rowspan="3">[lblTougetuNyukingaku]</td>
+                        <td rowspan="2" class="anken-table-bg">今回御請求額</td>   
+                        <td>[lblKonkaiGoseikyugaku]</td> 
+                        <td></td>
+                        <td></td>                   
+                    </tr>
+
+                    <tr></tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span  class="anken-table-bg">今回御買上額</span>
+                        </td>
+                        <td rowspan="2">[lblKonkaiOkaiagegaku]</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">消費税額</span>
+                        </td>
+                        <td>[lblSyouhiZeigaku]</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">
+                            <span class="anken-table-bg">入金予定日</span>
+                        </td>
+                        <td>[lblNyukinYoteibi]</td>
+                    </tr>
+                </table>
+    
+            </div>
+        
+
+        <!-- 請求項目設定 -->
+        <section class="anken-table">
+            <h4 class="anken-header">
+                請求項目設定
+            </h4>
+            
+            <!-- table -->
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">物件</span>
+                        </td>
+                        <td>[lblBUkenId]</td>
+                        <td>[lblBukenmeisyou]</td>
+                        <td>
+                            <a href="">
+                            <button>一覧選択</button>
+                            </a>
+                        </td>
+                        <td class="red">[cvalBukenId]</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">契約区分</span>
+                        </td>
+                        <td colspan="2">
+                            <select name="" id="">
+                                <option value="">（バインドなし）</option>
+                            </select>
+                        </td>
+                        <td colspan="2" class="red">[cvalKiykuKubun]</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求項目</span>
+                        </td>
+                        <td colspan="2"><input type="text"></td>
+                        <td colspan="2" class="red">[cvalSeikyuKomoku]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">摘要</span>
+                        </td>
+                        <td colspan="2"><input type="text"></td>
+                        <td colspan="2" class="red">[cvalTekiyou]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">単価</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[lblTankacvalTanka]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">数量</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[lblSuryoucvalSuryou]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">単位</span>
+                        </td>
+                        <td ><input type="text"></td>
+                        <td colspan="3" class="red">[cvalTani]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">請求項目計</span>
+                        </td>
+                        <td >[lblSeikyuKomokukei]</td>
+                        <td colspan="3" class="red">[cavlSeikyuKomokukei]</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">税区分</span>
+                        </td>
+                        <td >
+                            <select name="" id="">
+                                <option value="">（バインドなし）</option>
+                            </select>
+                        </td>
+                        <td colspan="3" class="red">[CustomVaildator6]</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <span class="anken-table-bg">売上計上日</span>
+                        </td>
+                        <td>
+                            <span>
+                                <input type="text"><img src="../../images/Calendar_scheduleHS.png" alt="">
+                            </span>
+                        </td>
+                        
+                        </td colspan="3" class="red">[cvalUriageKeijyoubi]</td>
+                    </tr>
+                </table>
+
+                <div class="red">[lblErrorMsg]</div>
+                <div>
+                    <a href="">
+                        <button>hiddenfield-hidSeikyusiyouKubun</button>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!--物件選択 Area -->
+        <section>
+            <h4 class="h4Title">物件選択</h4>
+            <div class="color-gray">選択ボタンをクリックして、物件を選択してください。</div>
+            <div class="anken-table-bg color-gray">以下の条件で絞込を行います。</div>
+            <table>
+                <tr>
+                    <td class="anken-table-bg">名称</td>
+                    <td><input type="text"></td>
+                    <td><a href=""><button>絞込み</button></a></td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr class="table-head background-skyblue">
+                    <th><a href="">操作</a></th>
+                    <th><a href="">物件ID</a></th>
+                    <th><a href="">物件名（カナ・漢字））</a></th>
+                    <th><a href="">物件住所</a></th>
+                    <th><a href="">電話番号１</a></th>
+                </tr>
+                <tr>
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr class="table-skyblue">
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <tr>
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                    <tr  class="table-skyblue">
+                        <td>
+                            <button><a href="">選択</a></button>
+                        </td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                        <td>データバインド</td>
+                    </tr>
+                <tr>
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr class="table-skyblue">
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr class="table-skyblue">
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr>
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr class="table-skyblue">
+                    <td>
+                        <button><a href="">選択</a></button>
+                    </td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                    <td>データバインド</td>
+                </tr>
+                <tr >
+                    <td colspan="6" class="footer-page">       
+                        <a href="">1</a>
+                        <a href="">2</a>
+                    </td>
+                </tr>
+    </table>
+        <a href="">
+        <button>
+        キャンセル
+        </button>
+    </a>
+        </section>
+</body>
+</html>

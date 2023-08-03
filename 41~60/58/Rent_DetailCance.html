@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/Rent_DetailCance.css">
+    <title>Rent_DetailCance</title>
+</head>    
+<div class="navbar">
+    <div class="header">
+        <div class="header-left">
+            <div class="header-left-img">
+                <img src="../../images/CompanyLogo.jpg" alt="">
+            </div>
+            <div class="header-left-span">
+                <span>ルート</span>
+                <span>ルート</span>
+                <div class="css-arrow-right"></div>
+                <span>ルート</span>
+                <span>ルート</span>
+                <span>ルート</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div>[lblUserId]</div>
+            <span class="rog">ログアウト</span>
+        </div>
+</div>
+<div>
+    <button class="button">
+        HiddenField - hdnScrX
+    </button>
+</div>
+<div>
+    <button class="button">
+        HiddenField - hdnScrY
+    </button>
+</div>
+ <h1 class="midasi">明細解約（受注と発注の解約・消去）</h1>
+ <div>
+    <button class="button">
+        HiddenField - hdnCancelMode
+    </button>
+</div>
+    <div>
+      <span class="red">
+        解約する明細を選択後、解約日を入力し実行をクリックしてください。
+      </span>
+        <table>
+            <tr>
+                <th style="width:  110px;">
+                     解約日
+                </th>
+                <td>
+                    <input type="text">
+                </td>
+                <td>
+                    <button>
+                        <a href="">実行</a>
+                    </button>
+                    <button>
+                        <a href="">中止</a>
+                    </button>
+                </td>
+            </tr>
+        </table>
+       <span class="red">
+            解約日は必ずしてください。
+       </span> 
+       <br>
+       <span class="red">
+            解約日はYYYY/MM/DD形式で入力してください。
+       </span> 
+       <br>
+       <span class="red">
+            解約日に実在しない日付が入力されています。
+       </span>
+       <br>
+       <span class="red">
+            解約対象の明細を選択してください。
+       </span>   
+       <br>
+       <span class="red">
+            解約日は翌々月以前の日付を入力してください。
+       </span>
+       <br>
+       <div>　</div>
+    </div>
+
+    <div>
+        <span class="tag">
+        案件概要（受注ID ：M999999）
+        </span>
+    </div>
+    <div>
+        <button class="button">
+            HiddenField - hdnOrderID
+        </button>
+    </div>
+    <div>
+        <button class="button">
+            HiddenField - hdnRentOrderFlag
+        </button>
+    </div>
+    <div>
+        <table border="1" class="anken">
+            <tr>
+                <th>
+                    物件 
+                </th>
+                <td class="sin">
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnArticleID
+                        </button>
+                    </div>
+                    <a href="">シンシア浦田</a>
+                    <br>[lblOldArticleName]
+                </td>
+                <th>
+                    受注先
+                </th>
+                <td class="sin">
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnCustomerID
+                        </button>
+                    </div>
+                    <a href="">株式会社エレマックス</a>
+                </td>
+                <th rowspan="2">契約状況</th>
+                <td rowspan="2" class="kei">
+                    商談中
+                    <br>
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnOrderUserID
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnContractState
+                        </button>
+                    </div>
+                    未承認
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnApprovallUserID
+                        </button>
+                    </div>
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnApprovalState
+                        </button>
+                    </div>
+                    [lblLatestUser]
+                    
+                </td>
+            </tr>
+            <tr>
+                <th style="padding: 35px;">
+                    案件名
+                </th>
+                <td colspan="3">
+                    定額管理業務（定額）
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnContractType
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th >
+                    担当１
+                </th>
+                <td class="tan">
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnEmployeeD1
+                        </button>
+                    </div>
+                    担当者名１
+                </td>
+                <th>
+                    担当２
+                </th>
+                <td class="tan">
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnEmployeeD2
+                        </button>
+                    </div>
+                    担当者名２
+                </td>
+                <th>
+                    担当３
+                </th>
+                <td class="tan">
+                    <div>
+                        <button class="button">
+                            HiddenField - hdnEmployeeD3
+                        </button>
+                    </div>
+                    担当者名３
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    請求の割合
+                </th>  
+                <td>
+                    資料に対して<span style="font-size: 25px;">999.9%</span>
+                </td>
+                <th>
+                    下限手数料
+                </th>
+                <td>
+                    [lblLowestBill]
+                </td>
+                <th>
+                    請求明細行の税区分
+                </th>
+                <td>
+                    税込
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    契約書の有無
+                </th>
+                <td>
+                    あり
+                </td>
+                <th>
+                    契約書を
+                    <br>取交した日
+                </th>
+                <td colspan="3">
+                    99/99/99
+                </td>
+            </tr>
+        </table>
+        <div>
+            <span class="tag">明細一覧（金額）</span>
+            <table border="1" class="mei">
+                <th>解約
+                
+                <br>対象</th>
+                <th style="width: 154px;">品目名</th>
+                <th style="width: 160px;">概要</th>
+                <th style="width: 60px;">面積数<br>量</th>
+                <th style="width: 40px;">面積<br>単位</th>
+                <th class="aka" style="width: 70px;">賃料単価</th>
+                <th class="aka" style="width: 70px;">請求額計</th>
+                <th class="aka" style="width: 50px;">税</th>
+                <th class="aka" style="width: 110px;">業務開始日</th>
+                <th style="width: 70px;">共益費</th>
+                <th style="width: 70px;">敷金</th>
+                <th style="width: 70px;">礼金</th>
+                <tr>
+                    <td>
+                        <input type="checkbox" style="width: 35px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" style="width: 35px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" style="width: 35px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" style="width: 35px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" style="width: 35px;">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+<main>

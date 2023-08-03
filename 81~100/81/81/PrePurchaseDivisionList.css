@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+}
+table{
+    width: 1000px;
+}
+/* header-place */
+.hf button ,.btn{
+    padding: 15px;
+}
+.hf button a,.account-button button a{
+  text-decoration: none;
+  color: black;
+}
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+.header-g{
+    font-size: 20px;
+    color: white;
+    background-color: #006633;
+    width: 1000px;
+}
+/* section1-place */
+.uper{
+    color: white;
+    background-color: #336699;
+    width: 1000px;
+}
+
+.section1-table table tr th,
+.section1-table table tr td{
+    border: 1px solid #FFFFCC;
+    background-color: #FFFFCC;
+}
+.section1-table table tr th{
+    background-color: #94C6F2;
+}
+.section1-table-button{
+    height: 45px;
+}
+.section1-table tr td div span{
+    color: red;
+}
+/* second table */
+
+.table-span-2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bg-color-blue {
+    background-color: #99CCFF;
+    margin-bottom: 10px;
+}
+
+.table-span-2 span {
+    color:rgb(156, 156, 156)
+}
+
+.table-span-3 {
+    margin-top: 10px;
+}
+
+.table-2-button a button{
+    padding: 10px;
+    display: flex;
+}
+
+.table-head {
+    border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+    background-color: #EAFFFF
+}
+
+/* table button{
+    width: 100%;
+} */
+
+.table{
+    margin-top: 10px;
+}
+
+
+.table .page a{
+    margin-left: 5px;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.background-skyblue {
+    background-color: #94C6F2;
+    width: 1000px;
+}
+
+.table-span {
+    color: white;
+    background-color: #336699;
+    width: 1000px;
+}
+
+/*  */
+.footer-page {
+    background-color: #99CCFF;
+    width: 1000px;
+}
+
+.footer-button button{
+    display: flex;
+    padding: 10px;
+}
+
+.footer-button-2 button {
+    padding: 10px;
+}
+.center{
+    text-align: center;
+    background-color: #A0A0A0;
+    width: 1000px;
+}
+/* section-3-Place */
+
+.h4-color div h4{
+    background-color: #99CCFF;
+}
+
+/* section4-place */
+.width-button div button{
+    width: 1000px;
+}
+.header-right div p{
+    background-color: #99CCFF;
+}

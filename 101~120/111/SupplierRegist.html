@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/SupplierRegist.css">
+    <title>page111</title>
+</head>    
+<div class="navbar">
+    <div class="header">
+         <div class="header-left">
+            <div class="header-left-img">
+                <img src="../../images/CompanyLogo.jpg" alt="">
+            </div>
+            <div class="header-left-span">
+                <span>ルート</span>
+                <span>ルート</span>
+                <div class="css-arrow-right"></div>
+                <span>ルート</span>
+                <span>ルート</span>
+                <span>ルート</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div>[lblUserId]</div>
+            <span class="rog">ログアウト</span>
+        </div>
+    </div>
+    <div>
+           
+        <h1 class="midasi">発注先</h1>
+        <div class="modoru">
+            <button style="width: 200px;">発注先一覧へ戻る</button>
+        </div>
+    </div>
+    <span class="tag">基本情報</span>
+    <div class="kihon">
+        <table class="hyou">
+            <tr>
+                <th>発注先ＩＤ</th>
+                <td>データバインド</td>
+            </tr>
+           <tr>
+                <th>名称</th>
+                <td>データバインド</td>
+           </tr>
+           <tr>
+                <th>名称(ｶﾅ)</th>
+                <td>データバインド</td>
+           </tr>
+           <tr>
+                <th>略称</th>
+                <td>データバインド</td>
+           </tr>
+           <tr>
+                <th>略称(ｶﾅ)</th>
+                 <td>データバインド</td>
+            </tr>
+           <tr>
+                 <th>敬称</th>
+                 <td>データバインド</td>
+            </tr>
+           <tr>
+                 <th>インボイス未対応</th>
+                 <td><input type="checkbox">チェックＯＮの場合は、インボイス未対応の発注先です。</td>
+             </tr>
+           <tr>
+                 <th>無効</th>
+                 <td><input type="checkbox">チェックＯＮの場合は、無効化された発注先です。</td>
+           </tr>
+        </table>
+        <button style="width: 50px;">編集</button><br>
+        <button class="mojibotan">SqlDataSource-dsrcSupplierBase</button><br>
+        <button class="mojibotan">SqlDataSource-dsrcMaxSupplierld</button><br>
+        <button class="mojibotan">HiddenField-hdnlnsertedSupplierld</button>
+    </div>
+    <span class="tag">付属情報</span>
+    <span class="nezumi">tabAttachedInfo</span>
+    <span>連絡先・所在</span>
+    
+    <button class="mokuji"><a href="">発注担当者</a></button>
+    <button class="mokuji"><a href="">発注先取引口座</a></button>
+    <button class="mokuji"><a href="">支払仕様</a></button>
+    <div>
+        <span class="tag">発注連絡先</span>
+    </div>
+
+    <div>
+        <table class="settei">
+            <tr>
+                <td rowspan="3">発注先の連絡先を設定します。</td>
+            </tr>
+            <tr>
+                <th>　</th>
+            </tr>
+            <tr>
+                <th>　</th>
+            </tr>
+        </table>
+        <table class="denwa">
+            <tr>
+            <th rowspan="3">電話１</th>
+            <th>区分</th>
+            <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>番号</th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>内線</th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th rowspan="4">電話２</th>
+            </tr>
+            <tr>
+                <th>区分</th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>
+                    番号
+                </th>
+                <td>
+                    データバインド
+                </td>
+            </tr>
+            <tr>
+                <th>内線</th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th rowspan="2">FAX</th>
+                <th>1</th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td>データバインド</td>
+            </tr>
+        </table>
+    </div>
+        <br>
+       
+        <div>
+            <span class="tag">発注先所在</span>
+        </div>
+        <table class="settei">
+            <tr>
+                <td rowspan="3">発注先の連絡先を設定します。</td>
+            </tr>
+            <tr>
+                <th>　</th>
+            </tr>
+            <tr>
+                <th>　</th>
+            </tr>
+        </table>
+        <table class="yuubin">
+            <tr>
+                <th>
+                    郵便番号
+                </th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>
+                    都道府県
+                </th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>
+                    市区町村
+                </th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>
+                    番地
+                </th>
+                <td>データバインド</td>
+            </tr>
+            <tr>
+                <th>
+                    建物名
+                </th>
+                <td>データバインド</td>
+            </tr>
+        </table>
+        <br>
+        <button style="width: 50px;">編集</button>
+        <div>
+        <button class="mojibotan">SqlDataSource-dsrcSupplierContactAndAddress</button><br>
+        <button class="mojibotan">SqlDataSource-dsrcTelephoneGroupType</button><br>
+        <button class="mojibotan">SqlDataSource-dsrcDepositGroupType</button>
+        </div>
+
+
+   
+
+</div>
+
+
+
+
+
+
+
+</div>
+<main>

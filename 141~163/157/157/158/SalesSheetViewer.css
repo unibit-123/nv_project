@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+.button-1 a button{
+    padding: 10px;
+}
+.button-2{
+    display: flex;
+}
+.button-2 p{
+    color: red;
+}
+.era{
+color: red;
+}
+.grei button{
+    background-color: rgb(224, 223, 223);
+    width: max-content;
+    text-align: left;
+}
+.lblErrorMsg p{
+ color: red;
+}
+
+.color-red {
+    color: red;
+}

@@ -1,0 +1,232 @@
+/*
+h1
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+    font-size: 24px;
+h2
+    background-color: #2A6197;
+    color: white;
+背景色黄色
+    background-color: #FCFCD1;
+背景色すごく薄い青(テーブルtd)
+    background-color: rgb(225, 251, 255);
+背景色薄い青（テーブル）
+    background-color: rgb(111, 181, 255);
+背景色少し薄い青（テーブルth）
+    background-color: #99CCFF;
+
+
+*/
+/*リセットCSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+button {
+    padding: 10px;
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+.section-1-bg {
+    color: white;
+    background-color: #006666;
+    margin-bottom:10px ;
+}
+.right{
+    text-align: right;
+}
+
+h1 {
+    margin-top: 3px;
+    color: white;
+    background-color: #006666;
+    font-size: 24px;
+}
+h2{
+    background-color: #2A6197;
+    color: white;
+} 
+a{
+    text-decoration: none;
+    color: black;
+}
+.hf button ,.btn{
+    padding: 15px;
+}
+.hf button a,.account-button button a{
+  text-decoration: none;
+  color: black;
+}
+.color-red{
+    color: red;
+}
+.background-skyblue{
+    background-color: #94C6F2;
+    text-align: center;
+}
+.btn-template {
+
+    padding: 0 15px;
+}
+.margin-right p,.margin-right select,.margin-right button{
+    margin: 5px 2.5px;
+}
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+.header-left {
+  display: flex;
+}
+.header-left-span {
+  display: flex;
+  padding-left: 5px;
+}
+.header-left-span span {
+  color: white;
+  padding-right: 12px;
+}
+.header-left-span span {
+  color: white;
+}
+.header-left-span span,
+.header-left-span div {
+  margin-left: 10px;
+}
+.css-arrow-right { 
+  border-color: transparent transparent transparent black; 
+  border-style: solid; 
+  border-width: 6px 0px 6px 12px; 
+  height: 0; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 0;
+}
+.header-right {
+  display: flex;
+}
+.color-gray{
+    color: gray;
+}
+/* 自社調達案件 */
+.close-btn{
+    margin-top: 16px;
+    text-align: right;
+}
+/* 案件概要 */
+.overview{
+    background-color: #FCFCD1;
+}
+/*テーブル全体 */
+table{
+    width: 100%;
+}
+.table-template th{
+    background-color: #94C6F2;
+}
+.table-template{
+    border: none;
+}
+.table-template table tr {
+    border: none;
+    border-collapse: collapse;
+}
+.table-template table td{
+    height: 10px;
+}
+.table-template table .tell-td{
+    background-color: #94C6F2;
+}
+.vertical-box{
+    padding-top: 15px;
+    width: 15px;
+}
+/* 作業品目一覧 */
+.task{
+    margin-bottom: 250px;
+}
+/* 付属情報 */
+.add-info{
+    margin-top: 5px;
+}
+.add-info h3{
+    background-color: rgb(157, 157, 157);
+    text-align: center;
+    font-weight: 400;
+    margin: 3px 3px 0 3px;
+}
+.add-info div{
+    margin: 0 3px;
+}
+.add-info a{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* 内装品目一覧 */
+.Interior{
+    width: auto;
+}
+.Interior th{
+    background-color: #94C6F2;
+}
+.Interior button{
+    padding: 3px 5px;
+}
+

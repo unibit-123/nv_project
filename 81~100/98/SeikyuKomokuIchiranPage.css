@@ -1,0 +1,112 @@
+/* グローバル変数 */
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: #99CDFF;
+}
+
+table tr th,
+table tr td {
+    border: 1px solid lightgray;
+}
+
+
+/* Backgroundやfont colorゾーン */
+
+.h3Title {
+    color: white;
+    background-color: #006666;
+}
+
+.h4Title {
+    color: white;
+    background-color: #336699;
+}
+
+.error-msg {
+    color: red;
+    font-size: small;
+}
+
+.table-td-bg {
+    background-color: #E8FFFF;
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/* Button */
+.btn-padding {
+    padding: 10px;
+}
+
+/* 請求概要 */
+.seikyu-table table {
+    background-color: #FFFFCC;
+}
+
+/* 請求項目一覧（請求明細） */
+.seikyu-table-2 table tr th{
+    padding: 0px 20px 0px 20px;
+}
+
+.seikyu-table-2 table tr td button {
+    width: 100%;
+}

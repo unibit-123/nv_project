@@ -1,0 +1,260 @@
+/* グローバル変数 */
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: #99CDFF;
+}
+
+table tr th,
+table tr td {
+    border: 1px solid lightgray;
+}
+
+
+
+button {
+    padding: 7px;
+}
+
+
+
+
+/* Backgroundやfont colorゾーン */
+
+.color-red {
+    color: red;
+}
+
+.small-red{
+    font-size: small;
+}
+
+.anken-table-bg {
+    background-color: #9ACEFF;
+}
+
+.small-span {
+    font-size: 2px;
+    color: rgb(175, 175, 175);
+}
+
+.h4Title {
+    color: white;
+    background-color: #336699;
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/* .header-button div button{
+    padding: 10px;
+} */
+
+/* section-1 */
+/* 商談成立受注案件 */
+
+.section-1-bg {
+    color: white;
+    background-color: #006666;
+}
+
+.flex {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.flex-btn {
+    padding: 2px 10px 2px 10px;
+}
+
+
+/* <!-- 案件概要 TABLE --> */
+
+.anken-table div {
+    background-color: #FFFFCC;
+}
+
+.anken-table table tr td {
+    border: 1px solid lightgray;
+}
+
+.anken-header {
+    color: white;
+    background-color: #336699;
+}
+
+.td-flex {
+    display: flex;
+}
+
+.table-btn {
+    padding: 0px 10px 0px 10px;
+}
+
+/* tabOrder-button-area */
+.tabOrder-button-area {
+    width: 100%;
+}
+
+.tabOrder-button-textleft button{
+    text-align: left;
+}
+
+/* spot table */
+.spot-table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spot-table div a button {
+    margin-left: 200px;
+}
+
+
+/* 継続スポット品目一覧（全体表示） */
+
+.width-btn {
+    width: 100%;
+}
+
+.width-btn-margin {
+    margin-top: 100px;
+}
+
+
+/* second table */
+
+.table-span-2 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.bg-color-blue {
+    background-color: #99CCFF;
+    margin-bottom: 10px;
+}
+
+.table-span-2 span {
+    color:rgb(156, 156, 156)
+}
+
+.table-span-3 {
+    margin-top: 10px;
+}
+
+.table-2-button a button{
+    padding: 10px;
+    display: flex;
+}
+
+.table-head {
+    border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+    background-color: #e3eff8
+}
+
+/* table button{
+    width: 100%;
+} */
+
+.table{
+    margin-top: 10px;
+}
+
+
+.table .page a{
+    margin-left: 5px;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.background-skyblue {
+    background-color: skyblue;
+}
+
+.table-span {
+    color: white;
+    background-color: #336699;
+}
+
+/*  */
+.footer-page {
+    background-color: #99CCFF;
+}
+
+.footer-button button{
+    display: flex;
+    padding: 10px;
+}
+
+.footer-button-2 button {
+    padding: 10px;
+}
+
+.color-lightgray {
+    color: rgb(156, 156, 156);
+}

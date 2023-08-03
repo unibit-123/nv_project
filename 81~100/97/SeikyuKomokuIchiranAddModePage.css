@@ -1,0 +1,212 @@
+/* グローバル変数 */
+
+* {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table tr th {
+    background-color: #99CDFF;
+}
+
+table tr th,
+table tr td {
+    border: 1px solid lightgray;
+}
+
+button {
+    padding: 10px;
+}
+
+
+/* Backgroundやfont colorゾーン */
+
+.color-red {
+    color: red;
+}
+
+.anken-table-bg {
+    background-color: #9ACEFF;
+}
+
+.small-span {
+    font-size: 2px;
+    color: rgb(175, 175, 175);
+}
+
+/* header place */
+
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+
+.header-left {
+    display: flex;
+}
+
+.header-left-span {
+    display: flex;
+    padding-left: 5px;
+}
+
+
+.header-left-span span {
+    color: white;
+    padding-right: 12px;
+}
+
+.header-left-span span {
+    color: white;
+}
+
+.header-left-span span,
+.header-left-span div {
+    margin-left: 10px;
+}
+
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+}
+
+.header-right {
+    display: flex;
+}
+
+/* .header-button div button{
+    padding: 10px;
+} */
+
+/* section-1 */
+
+
+.section-1-bg {
+    color: white;
+    background-color: #006666;
+    margin-bottom:10px ;
+}
+
+/* .flex {
+    margin: 20px 0px 20px 0px;
+    display: flex;
+} */
+
+.flex-btn {
+    margin-left: 100px;
+}
+
+/* <!-- 請求概要 TABLE --> */
+
+.table-yellow table{
+    background-color: #FFFFCC;
+}
+
+.anken-table table tr td {
+    border: 1px solid lightgray;
+}
+
+.anken-header {
+    color: white;
+    background-color: #336699;
+    margin-bottom: 10px;
+}
+
+.td-flex {
+    display: flex;
+}
+
+.table-btn {
+    padding: 0px 10px 0px 10px;
+}
+
+
+
+.h4Title {
+    color: white;
+    background-color: #336699;
+    margin-top: 20px;
+    margin-bottom:20px ;
+    
+}
+.bg-color-gray{
+    background-color: gray;
+    text-align: center;
+}
+.color-gray{
+    color: gray;
+}
+.red{
+    color: red;
+}
+
+
+.width-btn span a button {
+    width: 100%;
+}
+.footer-page {
+    background-color: #99CCFF;
+    width: 1000px;
+}
+
+.table-2 tr{
+    margin-left: 10px;
+}
+
+
+.table-head {
+    border-bottom: 2px solid #595959; /*線のスタイル*/
+}
+.table-skyblue{
+    background-color: #e3eff8
+}
+
+/* table button{
+    width: 100%;
+} */
+
+.table{
+    margin-top: 10px;
+}
+
+
+.table .page a{
+    margin-left: 5px;
+}
+
+.table td {
+    padding: 5px;
+}
+
+.background-skyblue {
+    background-color: skyblue;
+}
+
+.table-span {
+    color: white;
+    background-color: #336699;
+}
+
+/*  */
+.color-gray{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: gray;
+}

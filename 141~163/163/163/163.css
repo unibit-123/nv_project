@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+}
+.era{
+color: red;
+}
+.grei{
+    background-color: rgb(224, 223, 223);
+    width: max-content;
+}

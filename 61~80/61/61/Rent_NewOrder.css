@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+.mojibotan{
+padding: 10px;
+}
+
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #006633;
+}
+.header-left {
+  display: flex;
+}
+.header-left-span {
+  display: flex;
+  padding-left: 5px;
+}
+.header-left-span span {
+  color: white;
+  padding-right: 12px;
+}
+.header-left-span span {
+  color: white;
+}
+.header-left-span span,
+.header-left-span div {
+  margin-left: 10px;
+}
+.css-arrow-right { 
+  border-color: transparent transparent transparent black; 
+  border-style: solid; 
+  border-width: 6px 0px 6px 12px; 
+  height: 0; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 4px;
+  width: 0;
+}
+.header-right {
+  display: flex;
+}
+.color-gray{
+    color: gray;
+}
+.rog{
+    color: blue;
+}
+.midasi{
+    background-color: rgb(21, 137, 116);
+    color: white;
+}
+.hai{
+  color: rgb(221, 219, 219);
+}
+.aka{
+    color: red;
+}
+.keiyakukaisi th{
+  background-color: skyblue;
+  width: 120px;
+}
+.tag{
+  display: flex;
+    background-color: rgb(27, 123, 174);
+    color: white;
+}
+table{
+  border-collapse: collapse;
+}
+.anken th{
+  background-color: skyblue;
+  width: 60px;
+  height: 100px;
+}
+.bukken{
+  width: 400px;
+}
+.jyutyuu{
+width: 300px;
+}
+.jyoukyou{
+  width: 300px;
+}
+.teigaku{
+  font-weight: bold;
+  font-size: 18px;
+}
+.tan th{
+  height: 55px ;
+  text-align: center;
+}
+.rent{
+font-weight: bold;
+font-size: 18px;
+}
+
+.sei th{
+  height:0px;
+}
+.text{
+  width: 35px;
+}
+.rent{
+  font-weight: bold;
+  font-size: 24px;
+}
+.kagen{
+  width: 60px;
+}
+.kei th{
+height: 70px;
+line-height: 1;
+}
+.syounin th{
+background-color: skyblue;
+width: 400px;
+}
+.kara{
+  width: 150px;
+}
+.ao{
+  background-color: skyblue;
+}
+.usiroaka{
+  background-color: rgb(233, 174, 174);
+}
+.hingai{
+  width: 210px;
+}
+.men{
+  width: 60px;
+}
+.tani{
+  width: 60px;
+}
+.tin{
+  width: 80px;
+}
+.seikyuu{
+  width: 80px;
+}
+.gyo{
+width: 90px;
+}
+.kyou{
+  width: 70px;
+}
+.sikirei{
+  width: 70px;
+}

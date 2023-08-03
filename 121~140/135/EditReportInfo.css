@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 2px;
+  text-align: center;
+}
+
+th {
+  background-color: rgb(85, 220, 247);
+}
+
+colgroup {
+  width: 100%;
+}
+
+  /* テンプレート */
+.wrap {
+  display: flex;
+} 
+h1,h2 {
+    margin-top: 3px;
+    color: white;
+    background-color: #037b7b;
+    font-size: 24px;
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+.hf button ,.btn{
+    padding: 15px;
+}
+.hf button a,.account-button button a{
+  text-decoration: none;
+  color: black;
+}
+.color-red{
+    color: red;
+}
+.background-skyblue{
+    background-color: #94C6F2;
+    text-align: center;
+}
+.btn-template {
+
+    padding: 0 15px;
+}
+.margin-right p,.margin-right select,.margin-right button{
+    margin: 5px 2.5px;
+}
+/* header place */
+.header {
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    background-color: #1f7148;
+}
+.header-left {
+  display: flex;
+}
+.header-left-span {
+  display: flex;
+  padding-left: 5px;
+}
+.header-left-span span {
+  color: white;
+  padding-right: 12px;
+}
+.header-left-span span {
+  color: white;
+}
+.header-left-span span,
+.header-left-span div {
+  margin-left: 10px;
+}
+
+.css-arrow-right { 
+    border-color: transparent transparent transparent black; 
+    border-style: solid; 
+    border-width: 6px 0px 6px 12px; 
+    height: 0; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 4px;
+    width: 0;
+  }
+
+.header-right {
+  display: flex;
+}
+.color-gray{
+    color: gray;
+}
+.era{
+color: red;
+}
+.grei button{
+    background-color: rgb(224, 223, 223);
+    width: max-content;
+    text-align: left;
+}
+
+.color-red.left {
+  color: white;
+  background-color: #03557b;
+}
+
+.first-table {
+  width: 100%;
+}
+
+.first-table th {
+  width: 20%;
+}
